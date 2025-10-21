@@ -1,0 +1,10 @@
+// 导入主样式
+@use './main.scss';
+
+// 导入组件样式
+@use './components/header';
+@use './components/hero';
+@use './components/services';
+@use './components/about';
+@use './components/contact';
+@use './components/footer';

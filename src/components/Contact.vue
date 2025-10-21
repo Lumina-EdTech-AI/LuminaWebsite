@@ -1,42 +1,41 @@
 <template>
   <section id="contact" class="contact">
     <div class="container">
-      <h2 class="section-title">Get in Touch</h2>
-      <p class="section-subtitle">
-        Ready to transform education with AI? Let's start a conversation.
+      <h2 class="section-title" data-aos="fade-up">联系我们</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+        准备好用AI变革教育了吗？让我们开始对话吧。
       </p>
       <div class="contact-content">
         <div class="contact-info">
-          <div class="info-item">
+          <div class="info-item" data-aos="fade-right" data-aos-delay="200">
             <div class="info-icon">📧</div>
             <div>
-              <h4>Email</h4>
-              <p>contact@lumina-edtech.ai</p>
+              <h4>邮箱</h4>
+              <p>lumina.education.institute@gmail.com</p>
             </div>
           </div>
-          <div class="info-item">
+          <!-- <div class="info-item" data-aos="fade-right" data-aos-delay="300">
             <div class="info-icon">💼</div>
             <div>
-              <h4>Business Inquiries</h4>
+              <h4>商务咨询</h4>
               <p>partnerships@lumina-edtech.ai</p>
             </div>
-          </div>
-          <div class="info-item">
+          </div> -->
+          <div class="info-item" data-aos="fade-right" data-aos-delay="400">
             <div class="info-icon">🌐</div>
             <div>
-              <h4>Location</h4>
-              <p>Serving clients globally</p>
+              <h4>服务区域</h4>
+              <p>全球客户服务</p>
             </div>
           </div>
         </div>
-        <div class="contact-cta">
+        <div class="contact-cta" data-aos="fade-left" data-aos-delay="200">
           <p>
-            Whether you're an educational institution looking to innovate or an
-            EdTech company seeking AI expertise, we're here to help bring your
-            vision to life.
+            无论您是寻求创新的教育机构还是需要AI专业知识的
+            教育科技公司，我们都在这里帮助您实现愿景。
           </p>
-          <a href="mailto:contact@lumina-edtech.ai" class="btn btn-primary">
-            Send us a Message
+          <a href="mailto:lumina.education.institute@gmail.com" class="btn btn-primary">
+            发送消息
           </a>
         </div>
       </div>
@@ -44,126 +43,6 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: 'Contact'
-}
+<script setup>
+// Vue 3 composition API - 无需额外代码
 </script>
-
-<style scoped>
-.contact {
-  background-color: #fafafa;
-  padding: 5rem 0;
-}
-
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #2c3e50;
-  text-align: center;
-  margin-bottom: 1rem;
-  letter-spacing: -0.5px;
-}
-
-.section-subtitle {
-  font-size: 1.1rem;
-  color: #666;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.contact-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  margin-top: 3rem;
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.info-item {
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-}
-
-.info-icon {
-  font-size: 2rem;
-}
-
-.info-item h4 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #2c3e50;
-  margin-bottom: 0.3rem;
-}
-
-.info-item p {
-  color: #666;
-  font-size: 0.95rem;
-}
-
-.contact-cta {
-  background-color: #ffffff;
-  padding: 2.5rem;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border: 1px solid #e8e8e8;
-}
-
-.contact-cta p {
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-}
-
-.btn {
-  padding: 0.875rem 2rem;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  display: inline-block;
-}
-
-.btn-primary {
-  background-color: #4a90e2;
-  color: white;
-}
-
-.btn-primary:hover {
-  background-color: #357abd;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
-}
-
-@media (max-width: 768px) {
-  .contact {
-    padding: 3rem 0;
-  }
-  
-  .section-title {
-    font-size: 2rem;
-  }
-  
-  .contact-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-}
-</style>

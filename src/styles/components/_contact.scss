@@ -1,0 +1,129 @@
+// Contact 组件样式
+.contact {
+  background-color: #fafafa;
+  padding: 5rem 0;
+  position: relative;
+  background-image: url('/images/art.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  // 背景遮罩
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(250, 250, 250, 0.7);
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .info-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding: 1.5rem;
+    background: #ffffff;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+
+    &:hover {
+      transform: translateX(5px);
+      border-left-color: #FFD700;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .info-icon {
+      font-size: 2.5rem;
+      min-width: 50px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+      }
+    }
+
+    h4 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: #666;
+      font-size: 0.95rem;
+      margin: 0;
+    }
+  }
+
+  .contact-cta {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    p {
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      font-size: 1.05rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 3rem 0;
+
+    .contact-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .info-item {
+      padding: 1rem;
+
+      .info-icon {
+        font-size: 2rem;
+      }
+    }
+
+    .contact-cta {
+      padding: 2rem;
+    }
+  }
+}

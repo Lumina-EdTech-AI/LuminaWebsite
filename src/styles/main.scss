@@ -1,0 +1,279 @@
+@use "sass:color";
+
+// 变量定义 - 黑金色主题（根据截图）
+:root {
+  --primary-color: #D4A574;
+  --secondary-color: #000000;
+  --gold-light: #F4E4C1;
+  --gold-dark: #B8860B;
+  --text-color: #333333;
+  --light-bg: #0a0a0a;
+  --dark-bg: #000000;
+  --gold-gradient: linear-gradient(135deg, #D4A574 0%, #F4E4C1 50%, #D4A574 100%);
+}
+
+$primary-color: #D4A574; // 柔和金色
+$secondary-color: #000000; // 纯黑色
+$gold-light: #F4E4C1; // 浅金色
+$gold-dark: #B8860B; // 深金色
+$accent-color: #D4A574;
+$text-color: #333333;
+$light-bg: #0a0a0a;
+$dark-bg: #000000;
+$white: #ffffff;
+
+// 全局样式
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: $text-color;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+// 平滑滚动
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 0;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+// Section 通用样式和过渡动画
+section {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  scroll-snap-align: start;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  
+  &:not(#hero) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+// 容器样式
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+// 标题样式
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: $primary-color;
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: $secondary-color;
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// 按钮样式
+.btn {
+  padding: 0.875rem 2rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(244, 228, 193, 0.3), transparent);
+    transition: left 0.5s ease;
+  }
+
+  &:hover::before {
+    left: 100%;
+  }
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #D4A574, #F4E4C1);
+  color: #000000;
+  box-shadow: 0 4px 15px rgba(212, 165, 116, 0.4);
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(212, 165, 116, 0.6);
+  }
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #D4A574;
+  border: 2px solid #D4A574;
+  box-shadow: 0 0 15px rgba(212, 165, 116, 0.3);
+
+  &:hover {
+    background-color: rgba(212, 165, 116, 0.1);
+    border-color: #F4E4C1;
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(244, 228, 193, 0.5);
+  }
+}
+
+// 卡片样式
+.card {
+  background: $white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// 功能特性卡片
+.feature-item {
+  padding: 2rem;
+  background: rgba($white, 0.9);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  text-align: center;
+  border: 1px solid rgba($white, 0.2);
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  i {
+    font-size: 2.5rem;
+    color: $primary-color;
+    margin-bottom: 1rem;
+  }
+
+  h4 {
+    color: $text-color;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+
+  p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+
+// 服务网格布局
+.services-grid,
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+// 图标样式
+.icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+// 链接样式
+a {
+  color: $primary-color;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: color.adjust($primary-color, $lightness: -10%);
+  }
+}
+
+// 响应式断点
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .services-grid,
+  .features {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+// 工具类
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: $primary-color !important;
+}
+
+.text-secondary {
+  color: $secondary-color !important;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.py-5 {
+  padding: 5rem 0;
+}

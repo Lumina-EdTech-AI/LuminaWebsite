@@ -1,0 +1,176 @@
+// Hero 组件样式 - 轮播图版本
+.hero {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+
+  .hero-slider {
+    height: 100vh;
+    width: 100%;
+    
+    .swiper-wrapper {
+      height: 100vh;
+    }
+  }
+
+  .swiper-slide {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .slide-inner {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .slide-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    // text-shadow: 0 0 20px rgba(212, 165, 116, 0.8), 
+    //              0 0 40px rgba(212, 165, 116, 0.6),
+    //              2px 2px 8px rgba(0, 0, 0, 0.8);
+    background: linear-gradient(135deg, #D4A574 0%, #F4E4C1 50%, #D4A574 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 10px rgba(212, 165, 116, 0.6));
+    animation: titleGlow 3s ease-in-out infinite;
+  }
+
+  @keyframes titleGlow {
+    0%, 100% {
+      filter: drop-shadow(0 0 10px rgba(212, 165, 116, 0.6));
+    }
+    50% {
+      filter: drop-shadow(0 0 20px rgba(244, 228, 193, 0.8));
+    }
+  }
+
+  .slide-subtitle {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  // Swiper导航按钮样式
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #D4A574;
+    background: rgba(0, 0, 0, 0.6);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgba(212, 165, 116, 0.3);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(212, 165, 116, 0.3);
+
+    &:hover {
+      background: rgba(212, 165, 116, 0.2);
+      transform: scale(1.1);
+      border-color: rgba(212, 165, 116, 0.8);
+      box-shadow: 0 0 25px rgba(212, 165, 116, 0.6);
+    }
+
+    &::after {
+      font-size: 20px;
+    }
+  }
+
+  .swiper-button-next {
+    right: 20px;
+  }
+
+  .swiper-button-prev {
+    left: 20px;
+  }
+
+  // Swiper分页器样式
+  .swiper-pagination {
+    bottom: 30px;
+  }
+
+  :global(.swiper-pagination-bullet) {
+    width: 12px;
+    height: 12px;
+    background: #D4A574;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(212, 165, 116, 0.3);
+    box-shadow: 0 0 10px rgba(212, 165, 116, 0.2);
+  }
+
+  :global(.swiper-pagination-bullet-active) {
+    background: linear-gradient(135deg, #D4A574, #F4E4C1);
+    opacity: 1;
+    width: 30px;
+    border-radius: 6px;
+    border-color: #F4E4C1;
+    box-shadow: 0 0 20px rgba(244, 228, 193, 0.6);
+  }
+
+  @media (max-width: 768px) {
+    .slide-title {
+      font-size: 2.5rem;
+    }
+
+    .slide-subtitle {
+      font-size: 1.2rem;
+    }
+
+    .cta-buttons {
+      gap: 1rem;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 40px;
+      height: 40px;
+
+      &::after {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .slide-title {
+      font-size: 2rem;
+    }
+
+    .slide-subtitle {
+      font-size: 1rem;
+    }
+  }
+}
