@@ -20,7 +20,7 @@
     "Lumina",
     "教育科技"
   ],
-  "author": "麓鸣集团",
+  "author": "麓鸣教育集团",
   "license": "ISC",
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.1",
@@ -28,8 +28,10 @@
     "vite": "^7.1.11"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "aos": "^2.3.4",
     "swiper": "^12.0.2",
-    "vue": "^3.5.22"
+    "vue": "^3.5.22",
+    "vue-router": "^4.6.3"
   }
 }

@@ -1,0 +1,160 @@
+// Clients 组件样式
+.clients {
+  background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+  padding: 5rem 0;
+  position: relative;
+  min-height: 100vh;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .subsection-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, #D4A574, #F4E4C1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  // 客户学校区域
+  .clients-section {
+    margin-bottom: 4rem;
+
+    .clients-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .client-card {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      border: 2px solid transparent;
+
+      &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 25px rgba(212, 165, 116, 0.3);
+        border-color: #D4A574;
+      }
+
+      .client-logo {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto 1.5rem;
+        border-radius: 50%;
+        overflow: hidden;
+        background: linear-gradient(135deg, #D4A574, #F4E4C1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          transition: transform 0.3s ease;
+        }
+      }
+
+      &:hover .client-logo img {
+        transform: scale(1.1);
+      }
+
+      h4 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #2c3e50;
+        margin: 0;
+      }
+    }
+  }
+
+  // 合作伙伴区域
+  .partners-section {
+    margin-bottom: 4rem;
+
+    .partners-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .partner-card {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      border: 2px solid transparent;
+
+      &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 25px rgba(212, 165, 116, 0.3);
+        border-color: #D4A574;
+      }
+
+      .partner-logo {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          transition: transform 0.3s ease;
+          filter: grayscale(100%);
+        }
+      }
+
+      &:hover .partner-logo img {
+        transform: scale(1.1);
+        filter: grayscale(0%);
+      }
+
+      h4 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #2c3e50;
+        margin: 0;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 3rem 0;
+
+    .subsection-title {
+      font-size: 1.5rem;
+    }
+
+    .clients-section,
+    .partners-section {
+      margin-bottom: 3rem;
+
+      .clients-grid,
+      .partners-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+    }
+  }
+}

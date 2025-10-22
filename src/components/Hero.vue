@@ -2,13 +2,13 @@
   <section id="hero" class="hero">
     <div class="swiper hero-slider">
       <div class="swiper-wrapper">
-        <!-- 艺术主题 -->
+        <!-- AI技术研究 -->
         <div class="swiper-slide">
-          <div class="slide-inner" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/slider1.png')">
+          <div class="slide-inner" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/slider-ai.png')">
             <div class="container">
-              <h1 class="slide-title" data-aos="fade-up">艺术教育创新</h1>
+              <h1 class="slide-title" data-aos="fade-up">AI技术研究</h1>
               <p class="slide-subtitle" data-aos="fade-up" data-aos-delay="200">
-                通过AI技术，重塑艺术教育的未来
+                AI数字人 · AI教师 · AI批改 · AI智能生成试卷等
               </p>
               <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
                 <a href="#services" class="btn btn-primary">探索更多</a>
@@ -18,13 +18,13 @@
           </div>
         </div>
 
-        <!-- 科技主题 -->
+        <!-- 咨询规划 -->
         <div class="swiper-slide">
-          <div class="slide-inner" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/slider2.jpg')">
+          <div class="slide-inner" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/slider-personal.png')">
             <div class="container">
-              <h1 class="slide-title" data-aos="fade-up">前沿科技赋能</h1>
+              <h1 class="slide-title" data-aos="fade-up">咨询规划</h1>
               <p class="slide-subtitle" data-aos="fade-up" data-aos-delay="200">
-                将最新AI技术应用于教育领域
+                留学咨询 · 学习路径规划 · 出国指导
               </p>
               <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
                 <a href="#services" class="btn btn-primary">我们的服务</a>
@@ -34,13 +34,13 @@
           </div>
         </div>
 
-        <!-- 教育主题 -->
+        <!-- 个性化服务&数据分析 -->
         <div class="swiper-slide">
-          <div class="slide-inner" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/slider3.png')">
+          <div class="slide-inner" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/slider-data.png')">
             <div class="container">
-              <h1 class="slide-title" data-aos="fade-up">卓越教育体验</h1>
+              <h1 class="slide-title" data-aos="fade-up">个性化服务 & 数据分析</h1>
               <p class="slide-subtitle" data-aos="fade-up" data-aos-delay="200">
-                打造个性化、智能化的学习环境
+                个性化学习路径 · 智能数据分析 · 精准学习方案
               </p>
               <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
                 <a href="#services" class="btn btn-primary">了解详情</a>

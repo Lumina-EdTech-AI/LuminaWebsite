@@ -1,0 +1,126 @@
+// Team 组件样式
+.team {
+  background-color: #ffffff;
+  padding: 5rem 0;
+  position: relative;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+  }
+
+  .team-member {
+    background: #fafafa;
+    border-radius: 15px;
+    padding: 2.5rem 2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(212, 165, 116, 0.3);
+      border-color: rgba(212, 165, 116, 0.5);
+    }
+
+    .member-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: linear-gradient(135deg, #D4A574 0%, #F4E4C1 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      border: 4px solid #ffffff;
+      box-shadow: 0 4px 20px rgba(212, 165, 116, 0.3);
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+    }
+
+    &:hover .member-photo img {
+      transform: scale(1.1);
+    }
+
+    .member-info {
+      text-align: center;
+      width: 100%;
+
+      h3 {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 0.5rem;
+        background: linear-gradient(135deg, #D4A574, #F4E4C1);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .member-role {
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #D4A574;
+        margin-bottom: 1rem;
+        letter-spacing: 0.5px;
+        line-height: 1.4;
+      }
+
+      .member-desc {
+        font-size: 0.9rem;
+        color: #666;
+        line-height: 1.6;
+        text-align: center;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 3rem 0;
+
+    .team-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .team-member {
+      padding: 2rem 1.5rem;
+
+      .member-photo {
+        width: 120px;
+        height: 120px;
+      }
+
+      .member-info {
+        h3 {
+          font-size: 1.2rem;
+        }
+
+        .member-role {
+          font-size: 0.85rem;
+        }
+
+        .member-desc {
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+}
