@@ -1,5 +1,5 @@
 // 多语言配置
-import { reactive, ref, watch } from 'vue'
+import { ref, watch } from 'vue'
 import zh from './locales/zh.js'
 import en from './locales/en.js'
 
@@ -11,8 +11,8 @@ const messages = {
 // 使用ref使locale具有响应性
 const locale = ref('zh')
 
-const i18n = reactive({
-  locale, // 响应式locale
+const i18n = {
+  locale, // 响应式locale (ref)
   messages,
   t(key) {
     const keys = key.split('.')
@@ -36,6 +36,6 @@ const i18n = reactive({
   watch(getter, callback) {
     return watch(getter, callback)
   }
-})
+}
 
 export default i18n

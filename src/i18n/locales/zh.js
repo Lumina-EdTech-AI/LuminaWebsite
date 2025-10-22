@@ -213,16 +213,46 @@ export default {
     info1: '我们为家长提供专业的国际教育咨询与留学规划服务，也为教育机构提供AI技术研发与数字化转型解决方案。',
     info2: '填写下方表单，我们的专业顾问团队将在24小时内与您联系，为您提供个性化的咨询与服务方案。',
     form: {
-      name: '姓名',
-      email: '邮箱',
-      phone: '电话',
-      message: '留言内容',
+      name: {
+        label: '姓名',
+        placeholder: '请输入您的姓名'
+      },
+      email: {
+        label: '邮箱',
+        placeholder: 'example@email.com'
+      },
+      phone: {
+        label: '电话',
+        placeholder: '请输入您的联系电话'
+      },
+      organization: {
+        label: '机构/学校名称',
+        placeholder: '请输入您的机构或学校名称'
+      },
+      subject: {
+        label: '咨询主题 *',
+        placeholder: '请选择咨询主题',
+        options: {
+          parentConsulting: '家长咨询',
+          aiTech: 'AI技术研究',
+          consulting: '咨询规划服务',
+          personalized: '个性化服务',
+          cooperation: '合作洽谈',
+          other: '其他'
+        }
+      },
+      message: {
+        label: '留言内容',
+        placeholder: '请输入您想咨询的内容...'
+      },
       submit: '发送消息',
-      sending: '发送中...',
-      namePlaceholder: '请输入您的姓名',
-      emailPlaceholder: 'example@email.com',
-      phonePlaceholder: '请输入您的联系电话',
-      messagePlaceholder: '请输入您想咨询的内容...'
+      sending: '发送中...'
+    },
+    messages: {
+      notProvided: '未提供',
+      messageContent: '留言内容',
+      submitSuccess: '✓ 提交成功！我们已收到您的咨询，将在24小时内与您联系。',
+      submitError: '✗ 提交失败，请稍后重试或直接发送邮件至 lumina.education.institute@gmail.com'
     },
     info: {
       emailLabel: '邮箱',

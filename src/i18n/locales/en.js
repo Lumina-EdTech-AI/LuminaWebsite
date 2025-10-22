@@ -213,16 +213,46 @@ export default {
     info1: 'We provide professional international education consulting and study abroad planning services for parents, as well as AI technology R&D and digital transformation solutions for educational institutions.',
     info2: 'Fill out the form below, and our professional consulting team will contact you within 24 hours to provide personalized consulting and service solutions.',
     form: {
-      name: 'Name',
-      email: 'Email',
-      phone: 'Phone',
-      message: 'Message',
+      name: {
+        label: 'Name',
+        placeholder: 'Enter your name'
+      },
+      email: {
+        label: 'Email',
+        placeholder: 'example@email.com'
+      },
+      phone: {
+        label: 'Phone',
+        placeholder: 'Enter your phone number'
+      },
+      organization: {
+        label: 'Organization/School',
+        placeholder: 'Enter your organization or school name'
+      },
+      subject: {
+        label: 'Inquiry Topic *',
+        placeholder: 'Please select an inquiry topic',
+        options: {
+          parentConsulting: 'Parent Consulting',
+          aiTech: 'AI Technology Research',
+          consulting: 'Consulting & Planning Services',
+          personalized: 'Personalized Services',
+          cooperation: 'Cooperation Discussion',
+          other: 'Other'
+        }
+      },
+      message: {
+        label: 'Message',
+        placeholder: 'Enter your inquiry...'
+      },
       submit: 'Send Message',
-      sending: 'Sending...',
-      namePlaceholder: 'Enter your name',
-      emailPlaceholder: 'example@email.com',
-      phonePlaceholder: 'Enter your phone number',
-      messagePlaceholder: 'Enter your inquiry...'
+      sending: 'Sending...'
+    },
+    messages: {
+      notProvided: 'Not provided',
+      messageContent: 'Message Content',
+      submitSuccess: '✓ Submission successful! We have received your inquiry and will contact you within 24 hours.',
+      submitError: '✗ Submission failed. Please try again later or email us directly at lumina.education.institute@gmail.com'
     },
     info: {
       emailLabel: 'Email',

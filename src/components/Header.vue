@@ -17,7 +17,7 @@
         <div class="language-switcher">
           <button 
             @click="switchLanguage('zh')" 
-            :class="{ active: i18n.locale === 'zh' }"
+            :class="{ active: i18n.locale.value === 'zh' }"
             class="lang-btn"
           >
             中文
@@ -25,7 +25,7 @@
           <span class="separator">|</span>
           <button 
             @click="switchLanguage('en')" 
-            :class="{ active: i18n.locale === 'en' }"
+            :class="{ active: i18n.locale.value === 'en' }"
             class="lang-btn"
           >
             EN

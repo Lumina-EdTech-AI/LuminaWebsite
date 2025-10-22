@@ -13,34 +13,34 @@
         
         <form class="contact-form" data-aos="fade-up" data-aos-delay="300" @submit.prevent="handleSubmit">
           <div class="form-group">
-            <label for="name">{{ i18n.t('contact.form.name') }} *</label>
+            <label for="name">{{ i18n.t('contact.form.name.label') }} *</label>
             <input 
               type="text" 
               id="name" 
               v-model="formData.name" 
               required 
-              :placeholder="i18n.t('contact.form.namePlaceholder')"
+              :placeholder="i18n.t('contact.form.name.placeholder')"
             />
           </div>
 
           <div class="form-group">
-            <label for="email">{{ i18n.t('contact.form.email') }} *</label>
+            <label for="email">{{ i18n.t('contact.form.email.label') }} *</label>
             <input 
               type="email" 
               id="email" 
               v-model="formData.email" 
               required 
-              :placeholder="i18n.t('contact.form.emailPlaceholder')"
+              :placeholder="i18n.t('contact.form.email.placeholder')"
             />
           </div>
 
           <div class="form-group">
-            <label for="phone">{{ i18n.t('contact.form.phone') }}</label>
+            <label for="phone">{{ i18n.t('contact.form.phone.label') }}</label>
             <input 
               type="tel" 
               id="phone" 
               v-model="formData.phone" 
-              :placeholder="i18n.t('contact.form.phonePlaceholder')"
+              :placeholder="i18n.t('contact.form.phone.placeholder')"
             />
           </div>
 
@@ -68,13 +68,13 @@
           </div>
 
           <div class="form-group">
-            <label for="message">{{ i18n.t('contact.form.message') }} *</label>
+            <label for="message">{{ i18n.t('contact.form.message.label') }} *</label>
             <textarea 
               id="message" 
               v-model="formData.message" 
               required 
               rows="5" 
-              :placeholder="i18n.t('contact.form.messagePlaceholder')"
+              :placeholder="i18n.t('contact.form.message.placeholder')"
             ></textarea>
           </div>
 
