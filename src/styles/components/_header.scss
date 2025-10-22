@@ -15,8 +15,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0;
     padding: 0 2rem;
   }
 
@@ -83,6 +83,44 @@
           width: 100%;
         }
       }
+    }
+  }
+
+  // 语言切换按钮样式
+  .language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border-left: 1px solid #e0e0e0;
+
+    .lang-btn {
+      background: none;
+      border: none;
+      color: #666;
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      padding: 0.3rem 0.6rem;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: #FFD700;
+        background: rgba(255, 215, 0, 0.1);
+      }
+
+      &.active {
+        color: #FFD700;
+        font-weight: 600;
+        background: rgba(255, 215, 0, 0.15);
+      }
+    }
+
+    .separator {
+      color: #ddd;
+      font-size: 0.85rem;
     }
   }
 

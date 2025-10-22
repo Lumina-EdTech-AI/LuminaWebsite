@@ -1,0 +1,12 @@
+{
+  "name": "lumina-website-optimization",
+  "scripts": {
+    "compress-images": "node scripts/compress-images.js",
+    "check-images": "powershell -ExecutionPolicy Bypass -File compress-images.ps1"
+  },
+  "devDependencies": {
+    "imagemin": "^8.0.1",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-mozjpeg": "^10.0.0"
+  }
+}

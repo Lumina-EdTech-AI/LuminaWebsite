@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- 首页 -->
+  <url>
+    <loc>https://www.lumina-education.com/</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.lumina-education.com/?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lumina-education.com/?lang=en" />
+  </url>
+  
+  <!-- 服务页面 -->
+  <url>
+    <loc>https://www.lumina-education.com/#services</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.lumina-education.com/#services?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lumina-education.com/#services?lang=en" />
+  </url>
+  
+  <!-- 团队页面 -->
+  <url>
+    <loc>https://www.lumina-education.com/#team</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.lumina-education.com/#team?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lumina-education.com/#team?lang=en" />
+  </url>
+  
+  <!-- 关于我们页面 -->
+  <url>
+    <loc>https://www.lumina-education.com/#about</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.lumina-education.com/#about?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lumina-education.com/#about?lang=en" />
+  </url>
+  
+  <!-- 全球布局页面 -->
+  <url>
+    <loc>https://www.lumina-education.com/#branches</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.lumina-education.com/#branches?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lumina-education.com/#branches?lang=en" />
+  </url>
+  
+  <!-- 客户与合作页面 -->
+  <url>
+    <loc>https://www.lumina-education.com/#clients</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.lumina-education.com/#clients?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lumina-education.com/#clients?lang=en" />
+  </url>
+  
+  <!-- 客户评价页面 -->
+  <url>
+    <loc>https://www.lumina-education.com/#testimonials</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.lumina-education.com/#testimonials?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lumina-education.com/#testimonials?lang=en" />
+  </url>
+  
+  <!-- 联系我们页面 -->
+  <url>
+    <loc>https://www.lumina-education.com/#contact</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.lumina-education.com/#contact?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lumina-education.com/#contact?lang=en" />
+  </url>
+
+</urlset>

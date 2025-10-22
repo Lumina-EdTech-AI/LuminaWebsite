@@ -6,13 +6,13 @@
         <div class="swiper-slide">
           <div class="slide-inner" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/slider-ai.png')">
             <div class="container">
-              <h1 class="slide-title" data-aos="fade-up">AI技术研究</h1>
+              <h1 class="slide-title" data-aos="fade-up">{{ i18n.t('hero.slide1.title') }}</h1>
               <p class="slide-subtitle" data-aos="fade-up" data-aos-delay="200">
-                AI数字人 · AI教师 · AI批改 · AI智能生成试卷等
+                {{ i18n.t('hero.slide1.subtitle') }}
               </p>
               <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
-                <a href="#services" class="btn btn-primary">探索更多</a>
-                <a href="#contact" class="btn btn-secondary">联系我们</a>
+                <a href="#services" class="btn btn-primary">{{ i18n.t('hero.slide1.cta1') }}</a>
+                <a href="#contact" class="btn btn-secondary">{{ i18n.t('hero.slide1.cta2') }}</a>
               </div>
             </div>
           </div>
@@ -22,13 +22,13 @@
         <div class="swiper-slide">
           <div class="slide-inner" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/slider-personal.png')">
             <div class="container">
-              <h1 class="slide-title" data-aos="fade-up">咨询规划</h1>
+              <h1 class="slide-title" data-aos="fade-up">{{ i18n.t('hero.slide2.title') }}</h1>
               <p class="slide-subtitle" data-aos="fade-up" data-aos-delay="200">
-                留学咨询 · 学习路径规划 · 出国指导
+                {{ i18n.t('hero.slide2.subtitle') }}
               </p>
               <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
-                <a href="#services" class="btn btn-primary">我们的服务</a>
-                <a href="#contact" class="btn btn-secondary">立即咨询</a>
+                <a href="#services" class="btn btn-primary">{{ i18n.t('hero.slide2.cta1') }}</a>
+                <a href="#contact" class="btn btn-secondary">{{ i18n.t('hero.slide2.cta2') }}</a>
               </div>
             </div>
           </div>
@@ -38,13 +38,13 @@
         <div class="swiper-slide">
           <div class="slide-inner" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/slider-data.png')">
             <div class="container">
-              <h1 class="slide-title" data-aos="fade-up">个性化服务 & 数据分析</h1>
+              <h1 class="slide-title" data-aos="fade-up">{{ i18n.t('hero.slide3.title') }}</h1>
               <p class="slide-subtitle" data-aos="fade-up" data-aos-delay="200">
-                个性化学习路径 · 智能数据分析 · 精准学习方案
+                {{ i18n.t('hero.slide3.subtitle') }}
               </p>
               <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
-                <a href="#services" class="btn btn-primary">了解详情</a>
-                <a href="#contact" class="btn btn-secondary">合作咨询</a>
+                <a href="#services" class="btn btn-primary">{{ i18n.t('hero.slide3.cta1') }}</a>
+                <a href="#contact" class="btn btn-secondary">{{ i18n.t('hero.slide3.cta2') }}</a>
               </div>
             </div>
           </div>
@@ -63,6 +63,7 @@
 
 <script setup>
 import { onMounted } from 'vue'
+import i18n from '../i18n/index.js'
 import Swiper from 'swiper'
 import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules'
 import 'swiper/css'

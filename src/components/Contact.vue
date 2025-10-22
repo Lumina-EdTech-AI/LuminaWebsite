@@ -1,91 +1,85 @@
 <template>
   <section id="contact" class="contact">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-up">联系我们</h2>
+      <h2 class="section-title" data-aos="fade-up">{{ i18n.t('contact.title') }}</h2>
       <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
-        无论您是想咨询留学服务的家长，还是寻求AI教育创新的机构，我们都随时为您服务
+        {{ i18n.t('contact.subtitle') }}
       </p>
       <div class="contact-content">
         <div class="contact-info" data-aos="fade-up" data-aos-delay="200">
-          <p>
-            我们为家长提供专业的国际教育咨询与留学规划服务，
-            也为教育机构提供AI技术研发与数字化转型解决方案。
-          </p>
-          <p>
-            填写下方表单，我们的专业顾问团队将在24小时内与您联系，
-            为您提供个性化的咨询与服务方案。
-          </p>
+          <p>{{ i18n.t('contact.info1') }}</p>
+          <p>{{ i18n.t('contact.info2') }}</p>
         </div>
         
         <form class="contact-form" data-aos="fade-up" data-aos-delay="300" @submit.prevent="handleSubmit">
           <div class="form-group">
-            <label for="name">姓名 *</label>
+            <label for="name">{{ i18n.t('contact.form.name') }} *</label>
             <input 
               type="text" 
               id="name" 
               v-model="formData.name" 
               required 
-              placeholder="请输入您的姓名"
+              :placeholder="i18n.t('contact.form.namePlaceholder')"
             />
           </div>
 
           <div class="form-group">
-            <label for="email">邮箱 *</label>
+            <label for="email">{{ i18n.t('contact.form.email') }} *</label>
             <input 
               type="email" 
               id="email" 
               v-model="formData.email" 
               required 
-              placeholder="example@email.com"
+              :placeholder="i18n.t('contact.form.emailPlaceholder')"
             />
           </div>
 
           <div class="form-group">
-            <label for="phone">电话</label>
+            <label for="phone">{{ i18n.t('contact.form.phone') }}</label>
             <input 
               type="tel" 
               id="phone" 
               v-model="formData.phone" 
-              placeholder="请输入您的联系电话"
+              :placeholder="i18n.t('contact.form.phonePlaceholder')"
             />
           </div>
 
           <div class="form-group">
-            <label for="organization">机构/学校名称</label>
+            <label for="organization">{{ i18n.t('contact.form.organization.label') }}</label>
             <input 
               type="text" 
               id="organization" 
               v-model="formData.organization" 
-              placeholder="请输入您的机构或学校名称"
+              :placeholder="i18n.t('contact.form.organization.placeholder')"
             />
           </div>
 
           <div class="form-group">
-            <label for="subject">咨询主题 *</label>
+            <label for="subject">{{ i18n.t('contact.form.subject.label') }}</label>
             <select id="subject" v-model="formData.subject" required>
-              <option value="">请选择咨询主题</option>
-              <option value="parent-consulting">家长咨询</option>
-              <option value="ai-tech">AI技术研究</option>
-              <option value="consulting">咨询规划服务</option>
-              <option value="personalized">个性化服务</option>
-              <option value="cooperation">合作洽谈</option>
-              <option value="other">其他</option>
+              <option value="">{{ i18n.t('contact.form.subject.placeholder') }}</option>
+              <option value="parent-consulting">{{ i18n.t('contact.form.subject.options.parentConsulting') }}</option>
+              <option value="ai-tech">{{ i18n.t('contact.form.subject.options.aiTech') }}</option>
+              <option value="consulting">{{ i18n.t('contact.form.subject.options.consulting') }}</option>
+              <option value="personalized">{{ i18n.t('contact.form.subject.options.personalized') }}</option>
+              <option value="cooperation">{{ i18n.t('contact.form.subject.options.cooperation') }}</option>
+              <option value="other">{{ i18n.t('contact.form.subject.options.other') }}</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="message">留言内容 *</label>
+            <label for="message">{{ i18n.t('contact.form.message') }} *</label>
             <textarea 
               id="message" 
               v-model="formData.message" 
               required 
               rows="5" 
-              placeholder="请详细描述您的需求..."
+              :placeholder="i18n.t('contact.form.messagePlaceholder')"
             ></textarea>
           </div>
 
           <button type="submit" class="btn btn-primary" :disabled="isSubmitting">
-            {{ isSubmitting ? '提交中...' : '提交咨询' }}
+            {{ isSubmitting ? i18n.t('contact.form.sending') : i18n.t('contact.form.submit') }}
           </button>
 
           <p v-if="submitMessage" class="submit-message" :class="{ success: submitSuccess }">
@@ -100,6 +94,7 @@
 <script setup>
 import { ref } from 'vue'
 import emailjs from '@emailjs/browser'
+import i18n from '../i18n/index.js'
 
 const formData = ref({
   name: '',
@@ -114,15 +109,15 @@ const isSubmitting = ref(false)
 const submitMessage = ref('')
 const submitSuccess = ref(false)
 
-// 咨询主题映射
-const subjectMap = {
-  'parent-consulting': '家长咨询',
-  'ai-tech': 'AI技术研究',
-  'consulting': '咨询规划服务',
-  'personalized': '个性化服务',
-  'cooperation': '合作洽谈',
-  'other': '其他'
-}
+// 咨询主题映射 - 使用响应式函数以支持语言切换
+const getSubjectMap = () => ({
+  'parent-consulting': i18n.t('contact.form.subject.options.parentConsulting'),
+  'ai-tech': i18n.t('contact.form.subject.options.aiTech'),
+  'consulting': i18n.t('contact.form.subject.options.consulting'),
+  'personalized': i18n.t('contact.form.subject.options.personalized'),
+  'cooperation': i18n.t('contact.form.subject.options.cooperation'),
+  'other': i18n.t('contact.form.subject.options.other')
+})
 
 // EmailJS 配置
 const EMAILJS_SERVICE_ID = 'service_ix128zl'
@@ -146,13 +141,14 @@ const handleSubmit = async () => {
     })
 
     // 构建完整的留言内容
+    const subjectMap = getSubjectMap()
     const fullMessage = `
-邮箱: ${formData.value.email}
-电话: ${formData.value.phone || '未提供'}
-机构/学校: ${formData.value.organization || '未提供'}
-咨询主题: ${subjectMap[formData.value.subject] || formData.value.subject}
+${i18n.t('contact.form.email.label')}: ${formData.value.email}
+${i18n.t('contact.form.phone.label')}: ${formData.value.phone || i18n.t('contact.messages.notProvided')}
+${i18n.t('contact.form.organization.label')}: ${formData.value.organization || i18n.t('contact.messages.notProvided')}
+${i18n.t('contact.form.subject.label')}: ${subjectMap[formData.value.subject] || formData.value.subject}
 
-留言内容:
+${i18n.t('contact.messages.messageContent')}:
 ${formData.value.message}
     `.trim()
 
@@ -176,7 +172,7 @@ ${formData.value.message}
     
     // 显示成功消息
     submitSuccess.value = true
-    submitMessage.value = '✓ 提交成功！我们已收到您的咨询，将在24小时内与您联系。'
+    submitMessage.value = i18n.t('contact.messages.submitSuccess')
     
     // 重置表单
     formData.value = {
@@ -196,7 +192,7 @@ ${formData.value.message}
   } catch (error) {
     console.error('EmailJS 发送失败:', error)
     submitSuccess.value = false
-    submitMessage.value = '✗ 提交失败，请稍后重试或直接发送邮件至 lumina.education.institute@gmail.com'
+    submitMessage.value = i18n.t('contact.messages.submitError')
     
     // 10秒后清除错误消息
     setTimeout(() => {
