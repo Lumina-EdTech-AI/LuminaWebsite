@@ -95,6 +95,7 @@
 import { ref } from 'vue'
 import emailjs from '@emailjs/browser'
 import i18n from '../i18n/index.js'
+import { trackFormSubmit } from '../utils/analytics.js'
 
 const formData = ref({
   name: '',
@@ -170,6 +171,9 @@ ${formData.value.message}
 
     console.log('EmailJS 发送成功:', response)
     
+    // 跟踪表单提交成功
+    trackFormSubmit('contact_form', true)
+    
     // 显示成功消息
     submitSuccess.value = true
     submitMessage.value = i18n.t('contact.messages.submitSuccess')
@@ -191,6 +195,10 @@ ${formData.value.message}
     
   } catch (error) {
     console.error('EmailJS 发送失败:', error)
+    
+    // 跟踪表单提交失败
+    trackFormSubmit('contact_form', false)
+    
     submitSuccess.value = false
     submitMessage.value = i18n.t('contact.messages.submitError')
     

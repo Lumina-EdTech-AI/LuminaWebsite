@@ -6,6 +6,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import i18n from './i18n/index.js'
 import { initSEO, watchLanguageChange } from './utils/seo.js'
+import { initScrollTracking } from './utils/scroll-tracking.js'
 
 const app = createApp(App)
 
@@ -31,3 +32,6 @@ AOS.init({
   offset: 100,
   easing: 'ease-in-out'
 })
+
+// 初始化滚动深度跟踪
+initScrollTracking()

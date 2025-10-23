@@ -38,8 +38,12 @@
 
 <script setup>
 import i18n from '../i18n/index.js'
+import { trackLinkClick, trackLanguageChange } from '../utils/analytics.js'
 
 const scrollToSection = (sectionId) => {
+  // 跟踪导航点击
+  trackLinkClick(`#${sectionId}`, sectionId)
+  
   const element = document.getElementById(sectionId)
   if (element) {
     element.scrollIntoView({ 
@@ -51,5 +55,7 @@ const scrollToSection = (sectionId) => {
 
 const switchLanguage = (lang) => {
   i18n.setLocale(lang)
+  // 跟踪语言切换
+  trackLanguageChange(lang)
 }
 </script>
