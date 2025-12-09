@@ -90,9 +90,9 @@ The website follows a simplistic and elegant design approach with:
 ## Contact
 
 For inquiries:
-- Email: contact@lumina-edtech.ai
-- Business: partnerships@lumina-edtech.ai
+- Email: bfang.01234@gmail.com
+- Business: lumina.education.institute@gmail.com
 
 ---
 
-© 2025 Lumina EdTech AI. All rights reserved.
+© 2025 Lumina EdTech All rights reserved.
