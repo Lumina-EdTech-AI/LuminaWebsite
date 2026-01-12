@@ -82,7 +82,7 @@ export default {
         desc: 'Technology expert from Stanford University, providing cutting-edge technical guidance to ensure products remain at the industry forefront.'
       },
       qiu: {
-        name: 'Dr. Ling Qiu',
+        name: 'Dr. Lynn Qiu',
         role: 'Renowned Professor at Shanghai University · Psychology Expert',
         desc: 'Proficient in both Eastern and Western medical principles, focusing on mental health and holistic development research, providing professional guidance for students and families.'
       },
