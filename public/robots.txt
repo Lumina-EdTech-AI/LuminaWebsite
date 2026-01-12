@@ -4,7 +4,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://www.lumina-education.com/sitemap.xml
+Sitemap: https://www.lumina-edu.cn/sitemap.xml
 
 # 不允许爬取的目录(如果有)
 # Disallow: /admin/

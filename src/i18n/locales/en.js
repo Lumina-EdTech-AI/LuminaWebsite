@@ -68,7 +68,7 @@ export default {
     members: {
       sissi: {
         name: 'Sissi Ma',
-        role: 'CEO · Chief Executive Officer',
+        role: 'Co-founder · CEO',
         desc: 'Leading the strategic development of Lumina Education Group, committed to deeply integrating AI technology with education and providing innovative solutions for global educational institutions.'
       },
       benny: {

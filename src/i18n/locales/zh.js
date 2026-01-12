@@ -68,7 +68,7 @@ export default {
     members: {
       sissi: {
         name: 'Sissi Ma',
-        role: 'CEO · 首席执行官',
+        role: 'CEO · 麓鸣国际教育创始人',
         desc: '领导麓鸣教育集团的战略发展，致力于将AI技术与教育深度融合，为全球教育机构提供创新解决方案。'
       },
       benny: {
@@ -82,7 +82,7 @@ export default {
         desc: '来自斯坦福大学的技术专家，为团队提供前沿技术指导，确保产品始终处于行业领先水平。'
       },
       qiu: {
-        name: 'Dr. Ling Qiu',
+        name: 'Dr. Lynn Qiu',
         role: '上海大学知名教授 · 心理学专家',
         desc: '深通中西医疗原理,专注于心理健康与身心发展研究,为学生和家庭提供专业的健康与心灵发展指导。'
       },
