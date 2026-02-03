@@ -24,7 +24,77 @@ export default {
     organization: '组织架构',
     socialResponsibility: '社会责任'
   },
-  projectsDetail: {
+  servicesDetail: {
+    title: '麓鸣教育服务',
+    subtitle: '专业的教育咨询与技术解决方案',
+    services: '服务项目',
+    eduConsulting: {
+      title: '国际教育咨询',
+      desc: '为学生和家庭提供全面的国际升学规划和咨询服务',
+      feature1: '个性化升学规划',
+      feature2: '国际课程体系咨询',
+      feature3: '名校申请指导'
+    },
+    aiTech: {
+      title: 'AI科技研发',
+      desc: '开发先进的AI教育产品和解决方案',
+      feature1: '智能学习引擎',
+      feature2: '个性化推荐系统',
+      feature3: '数据分析平台'
+    },
+    digitalization: {
+      title: '企业数字化赋能',
+      desc: '为教育机构提供完整的数字化转型解决方案',
+      feature1: '信息系统集成',
+      feature2: '教学管理平台',
+      feature3: '数据驱动决策'
+    },
+    curriculum: {
+      title: '国际课程体系',
+      desc: '提供AP、A-Level、BTEC等国际认可的课程',
+      feature1: 'AP课程',
+      feature2: 'A-Level课程',
+      feature3: 'BTEC课程'
+    },
+    studyAbroad: {
+      title: '留学规划指导',
+      desc: '专业的留学申请和规划指导服务',
+      feature1: '文书写作指导',
+      feature2: '面试准备培训',
+      feature3: '签证手续协助'
+    },
+    research: {
+      title: '科研项目与竞赛',
+      desc: '组织参与高端科研项目和国际竞赛',
+      feature1: '科研项目指导',
+      feature2: '竞赛培训',
+      feature3: '论文发表支持'
+    },
+    whyChoose: {
+      title: '为什么选择麓鸣',
+      item1: {
+        title: '专业团队',
+        desc: '来自顶尖大学和企业的专业人才'
+      },
+      item2: {
+        title: '个性化服务',
+        desc: '根据每个学生的特点制定定制方案'
+      },
+      item3: {
+        title: '全球资源',
+        desc: '整合国际优质教育资源'
+      },
+      item4: {
+        title: '成功案例',
+        desc: '帮助数千学生成功升学'
+      }
+    },
+    cta: {
+      title: '开启你的教育新旅程',
+      desc: '联系我们了解如何为你提供最适合的教育解决方案',
+      button: '立即咨询'
+    }
+  },
     title: '麓鸣项目展示',
     subtitle: '探索我们的创新项目，见证教育未来的力量',
     projects: '项目展示',

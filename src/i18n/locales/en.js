@@ -25,6 +25,77 @@ export default {
     organization: 'Organization',
     socialResponsibility: 'Social Responsibility'
   },
+  servicesDetail: {
+    title: 'Lumina Education Services',
+    subtitle: 'Professional education consulting and technology solutions',
+    services: 'Services',
+    eduConsulting: {
+      title: 'International Education Consulting',
+      desc: 'Comprehensive university admission planning and consulting services for students and families',
+      feature1: 'Personalized admission planning',
+      feature2: 'International curriculum consulting',
+      feature3: 'Elite university application guidance'
+    },
+    aiTech: {
+      title: 'AI Technology R&D',
+      desc: 'Developing advanced AI education products and solutions',
+      feature1: 'Intelligent learning engine',
+      feature2: 'Personalization recommendation system',
+      feature3: 'Data analytics platform'
+    },
+    digitalization: {
+      title: 'Enterprise Digital Empowerment',
+      desc: 'Providing comprehensive digital transformation solutions for educational institutions',
+      feature1: 'System integration',
+      feature2: 'Teaching management platform',
+      feature3: 'Data-driven decision making'
+    },
+    curriculum: {
+      title: 'International Curriculum Systems',
+      desc: 'Offering internationally recognized curricula including AP, A-Level, and BTEC',
+      feature1: 'AP Curriculum',
+      feature2: 'A-Level Curriculum',
+      feature3: 'BTEC Curriculum'
+    },
+    studyAbroad: {
+      title: 'Study Abroad Planning & Guidance',
+      desc: 'Professional study abroad application and planning guidance services',
+      feature1: 'Essay writing guidance',
+      feature2: 'Interview preparation training',
+      feature3: 'Visa assistance'
+    },
+    research: {
+      title: 'Research Projects & Competitions',
+      desc: 'Organizing participation in high-level research projects and international competitions',
+      feature1: 'Research project guidance',
+      feature2: 'Competition training',
+      feature3: 'Publication support'
+    },
+    whyChoose: {
+      title: 'Why Choose Lumina',
+      item1: {
+        title: 'Professional Team',
+        desc: 'Talented professionals from top universities and enterprises'
+      },
+      item2: {
+        title: 'Personalized Services',
+        desc: 'Customized solutions tailored to each student\'s needs'
+      },
+      item3: {
+        title: 'Global Resources',
+        desc: 'Integrated international quality education resources'
+      },
+      item4: {
+        title: 'Success Stories',
+        desc: 'Helping thousands of students succeed in university admission'
+      }
+    },
+    cta: {
+      title: 'Begin Your Education Journey',
+      desc: 'Contact us to discover the perfect educational solution for you',
+      button: 'Consult Now'
+    }
+  },
   projectsDetail: {
     title: 'Lumina Projects',
     subtitle: 'Explore our innovative projects and witness the power of education\'s future',

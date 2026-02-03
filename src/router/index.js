@@ -35,6 +35,11 @@ const router = createRouter({
       component: () => import('../views/ProjectDetail.vue')
     },
     {
+      path: '/services',
+      name: 'services-detail',
+      component: () => import('../views/ServicesDetail.vue')
+    },
+    {
       path: '/student',
       name: 'student',
       beforeEnter: () => {
