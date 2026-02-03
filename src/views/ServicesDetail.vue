@@ -1,5 +1,6 @@
 <template>
   <div class="services-detail">
+    <Header />
     <!-- 导航面包屑 -->
     <div class="breadcrumb">
       <div class="container">
@@ -150,11 +151,14 @@
         </router-link>
       </div>
     </section>
+    <Footer />
   </div>
 </template>
 
 <script setup>
 import i18n from '../i18n/index.js'
+import Header from '../components/Header.vue'
+import Footer from '../components/Footer.vue'
 import { onMounted } from 'vue'
 import AOS from 'aos'
 

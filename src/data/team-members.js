@@ -67,48 +67,7 @@ export const teamMembers = [
       ]
     },
     // 主要成就
-    achievements: [
-      '2019年入选"中国EdTech 40 Under 40"领导者',
-      '带领麓鸣获得多轮融资，估值超过1亿美元',
-      '在全国建立50+个教育咨询中心',
-      '服务超过50万学生和家长',
-      '获得"最具影响力女性CEO"奖',
-      '被评为"中国教育创新领袖"'
-    ],
-    achievementsEn: [
-      'Named to "China EdTech 40 Under 40" leadership',
-      'Led Lumina to multiple funding rounds with $100M+ valuation',
-      'Established 50+ education consulting centers nationwide',
-      'Served 500,000+ students and families',
-      'Awarded "Most Influential Female CEO"',
-      'Recognized as "Education Innovation Leader in China"'
-    ],
     // 著作和发表
-    publications: [
-      {
-        title: '《AI驱动的教育未来》',
-        type: '著作',
-        year: 2022,
-        titleEn: 'The Future of Education Driven by AI',
-        typeEn: 'Book'
-      },
-      {
-        title: '在线教育中的个性化学习研究',
-        type: '论文',
-        year: 2021,
-        journal: '中国教育技术学报',
-        titleEn: 'Personalized Learning in Online Education',
-        typeEn: 'Journal Article'
-      },
-      {
-        title: '教育科技初创企业的快速扩展战略',
-        type: '演讲',
-        year: 2020,
-        venue: 'SXSW 2020',
-        titleEn: 'Rapid Scaling Strategies for EdTech Startups',
-        typeEn: 'Conference Keynote'
-      }
-    ],
     // 个人特长
   },
   {
@@ -167,45 +126,7 @@ export const teamMembers = [
           companyEn: 'Alibaba'
         }
       ]
-    },
-    achievements: [
-      '在Google Brain发表5篇顶级会议论文 (NeurIPS, ICML)',
-      '获得"AI 40 Under 40"认可',
-      '申请并获批30+项AI相关专利',
-      '领导建立了500+人的技术团队',
-      '麓鸣平台日均处理10亿+条学习数据',
-      '获得"年度最佳技术创新"奖'
-    ],
-    achievementsEn: [
-      'Published 5 top-tier papers at Google Brain (NeurIPS, ICML)',
-      'Recognized in "AI 40 Under 40"',
-      'Filed and granted 30+ AI patents',
-      'Built and led 500+ person technical team',
-      'Lumina platform processes 1B+ learning data points daily',
-      'Awarded "Best Technical Innovation of the Year"'
-    ],
-    publications: [
-      {
-        title: '《深度学习在自适应学习中的应用》',
-        type: '著作',
-        year: 2021,
-        titleEn: 'Deep Learning Applications in Adaptive Learning'
-      },
-      {
-        title: '个性化推荐系统中的多臂老虎机算法优化',
-        type: '论文',
-        year: 2019,
-        journal: 'NeurIPS 2019',
-        titleEn: 'Multi-Armed Bandit Optimization for Personalization'
-      },
-      {
-        title: '大规模教育数据的实时处理架构',
-        type: '论文',
-        year: 2018,
-        journal: 'ICML 2018',
-        titleEn: 'Real-time Processing Architecture for Large-scale Education Data'
-      }
-    ],
+    }
   },
   {
     id: 'david',
@@ -264,38 +185,7 @@ export const teamMembers = [
           companyEn: 'EdTech Startups'
         }
       ]
-    },
-    achievements: [
-      '在斯坦福大学发表5+篇AI人机交互研究论文',
-      '获得教育技术创新奖',
-      '推动麓鸣AI教师产品在100+所学校的应用',
-      '领导多个教育AI项目的开发和部署',
-      '获得"年度教育创新领导者"称号',
-      '受邀在国际教育科技大会演讲'
-    ],
-    achievementsEn: [
-      'Published 5+ research papers on AI and HCI at Stanford',
-      'Awarded Educational Technology Innovation Prize',
-      'Led deployment of Lumina AI Teacher in 100+ schools',
-      'Led development and deployment of multiple education AI projects',
-      'Named "Annual Education Innovation Leader"',
-      'Invited keynote speaker at international EdTech conferences'
-    ],
-    publications: [
-      {
-        title: '《AI人机交互在个性化教育中的应用》',
-        type: '研究论文',
-        year: 2024,
-        titleEn: 'AI HCI Applications in Personalized Education'
-      },
-      {
-        title: '《教育技术融合的未来趋势》',
-        type: '论文',
-        year: 2023,
-        titleEn: 'Future Trends in Education Technology Integration',
-        journal: 'Journal of Educational Technology'
-      }
-    ],
+    }
   },
   {
     id: 'qiu',
@@ -353,38 +243,7 @@ export const teamMembers = [
           companyEn: 'Fudan University School of Medicine'
         }
       ]
-    },
-    achievements: [
-      '发表50+篇心血管医学研究论文',
-      '获得国家自然科学基金资助',
-      '被引用超过1000次',
-      '获评复旦大学青年杰出教师',
-      '主导多项临床与教学创新项目',
-      '获得卫生部医学科技奖'
-    ],
-    achievementsEn: [
-      'Published 50+ cardiovascular research papers',
-      'Awarded National Science Foundation grants',
-      'Over 1000 citations',
-      'Recognized as Young Distinguished Professor at Fudan University',
-      'Led multiple clinical and teaching innovation projects',
-      'Awarded Ministry of Health Medical Science and Technology Award'
-    ],
-    publications: [
-      {
-        title: '《心血管疾病预防与管理》',
-        type: '著作',
-        year: 2018,
-        titleEn: 'Cardiovascular Disease Prevention and Management'
-      },
-      {
-        title: '新型抗凝血药物的临床应用研究',
-        type: '期刊论文',
-        year: 2019,
-        titleEn: 'Clinical Application Study of Novel Anticoagulants',
-        journal: 'Journal of Cardiovascular Medicine'
-      }
-    ],
+    }
   },
   {
     id: 'anderson',
@@ -426,21 +285,7 @@ export const teamMembers = [
           companyEn: 'MIT'
         }
       ]
-    },
-    achievements: [
-      '在顶级会议发表50+篇论文 (IJCAI, AAAI等)',
-      '获得5项美国专利',
-      '领导国际AI教育研究中心',
-      '培养30+位博士和研究员',
-      '获得教育创新突出贡献奖'
-    ],
-    achievementsEn: [
-      'Published 50+ papers at top conferences (IJCAI, AAAI, etc)',
-      'Holds 5 US patents',
-      'Led international AI in Education research center',
-      'Mentored 30+ Ph.D. students and researchers',
-      'Awarded for Outstanding Contribution to Education Innovation'
-    ],
+    }
   },
   {
     id: 'mitchell',
@@ -482,21 +327,7 @@ export const teamMembers = [
           companyEn: 'Columbia University'
         }
       ]
-    },
-    achievements: [
-      '发表60+篇教育数据科学论文',
-      '领导国际学习分析学会',
-      '获得NSF职业奖',
-      '建立3个教育数据实验室',
-      '指导20+位博士研究生'
-    ],
-    achievementsEn: [
-      'Published 60+ papers in educational data science',
-      'Leads International Society for Learning Analytics',
-      'Awarded NSF CAREER Award',
-      'Established 3 educational data labs',
-      'Supervised 20+ doctoral students'
-    ],
+    }
   }
 ]
 

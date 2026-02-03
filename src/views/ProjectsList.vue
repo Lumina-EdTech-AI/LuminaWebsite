@@ -1,5 +1,6 @@
 <template>
   <div class="projects">
+    <Header />
     <!-- 导航面包屑 -->
     <div class="breadcrumb">
       <div class="container">
@@ -86,6 +87,7 @@
         </div>
       </section>
     </div>
+    <Footer />
   </div>
 </template>
 
@@ -93,6 +95,8 @@
 import { ref, computed, onMounted } from 'vue'
 import i18n from '../i18n/index.js'
 import { projectsData, getCategoryById } from '../data/projects-data.js'
+import Header from '../components/Header.vue'
+import Footer from '../components/Footer.vue'
 import AOS from 'aos'
 
 const activeCategory = ref(null)

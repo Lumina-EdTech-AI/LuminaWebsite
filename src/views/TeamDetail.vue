@@ -1,5 +1,6 @@
 <template>
   <div class="team-detail">
+    <Header />
     <!-- 导航面包屑 -->
     <div class="breadcrumb">
       <div class="container">
@@ -39,6 +40,15 @@
               <p class="member-quote quote-en">{{ member.quoteEn }}</p>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- 返回按钮 (顶部) -->
+      <div class="back-button-top">
+        <div class="container">
+          <router-link to="/#team" class="btn-back-top">
+            ← {{ i18n.t('common.backToTeam') }}
+          </router-link>
         </div>
       </div>
 
@@ -102,34 +112,14 @@
       </section>
 
       <!-- 主要成就 -->
-      <section class="section achievements-section">
+      <!-- 返回按钮 -->
+      <section class="section back-section">
         <div class="container">
-          <h2 class="section-title">{{ i18n.t('teamDetail.achievements') }}</h2>
-          <div class="achievements-grid">
-            <div v-for="(achievement, index) in member.achievements"
-                 :key="index"
-                 class="achievement-card"
-                 data-aos="zoom-in"
-                 :data-aos-delay="100 * index">
-              <div class="achievement-icon">✓</div>
-              <p class="achievement-text">{{ achievement }}</p>
-            </div>
-            <div v-for="(achievement, index) in member.achievementsEn"
-                 :key="`en-${index}`"
-                 class="achievement-card achievement-en"
-                 data-aos="zoom-in"
-                 :data-aos-delay="100 * (index + member.achievements.length)">
-              <p class="achievement-text">{{ achievement }}</p>
-            </div>
-          </div>
+          <router-link to="/#team" class="btn-back">
+            ← {{ i18n.t('common.backToTeam') }}
+          </router-link>
         </div>
       </section>
-
-      <!-- 发表著作 -->
-      <section v-if="member.publications.length" class="section publications-section">
-        <div class="container">
-          <h2 class="section-title">{{ i18n.t('teamDetail.publications') }}</h2>
-          <div class="publications-list">
             <div v-for="(pub, index) in member.publications"
                  :key="index"
                  class="publication-item"
@@ -154,68 +144,24 @@
         </div>
       </section>
 
-      <!-- 专业领域 -->
-      <section class="section expertise-section">
-        <div class="container">
-          <h2 class="section-title">{{ i18n.t('teamDetail.expertise') }}</h2>
-          <div class="expertise-tags">
-            <span v-for="(skill, index) in member.expertise"
-                  :key="`zh-${index}`"
-                  class="expertise-tag"
-                  data-aos="flip-left"
-                  :data-aos-delay="50 * index">
-              {{ skill }}
-            </span>
-            <span v-for="(skill, index) in member.expertiseEn"
-                  :key="`en-${index}`"
-                  class="expertise-tag expertise-tag-en"
-                  data-aos="flip-left"
-                  :data-aos-delay="50 * (member.expertise.length + index)">
-              {{ skill }}
-            </span>
-          </div>
-        </div>
-      </section>
-
-      <!-- 兴趣爱好 -->
-      <section class="section interests-section">
-        <div class="container">
-          <h2 class="section-title">{{ i18n.t('teamDetail.interests') }}</h2>
-          <div class="interests-grid">
-            <div v-for="(interest, index) in member.interests"
-                 :key="`zh-${index}`"
-                 class="interest-card"
-                 data-aos="fade-up"
-                 :data-aos-delay="50 * index">
-              <div class="interest-icon">🎯</div>
-              <p>{{ interest }}</p>
-            </div>
-            <div v-for="(interest, index) in member.interestsEn"
-                 :key="`en-${index}`"
-                 class="interest-card interest-card-en"
-                 data-aos="fade-up"
-                 :data-aos-delay="50 * (member.interests.length + index)">
-              <p>{{ interest }}</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 返回团队 -->
-      <section class="section back-to-team">
+      <!-- 返回按钮 -->
+      <section class="section back-section">
         <div class="container">
           <router-link to="/#team" class="btn-back">
-            {{ i18n.t('common.backToTeam') }}
+            ← {{ i18n.t('common.backToTeam') }}
           </router-link>
         </div>
       </section>
     </div>
   </div>
+  <Footer />
 </template>
 
 <script setup>
 import { ref, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
+import Header from '../components/Header.vue'
+import Footer from '../components/Footer.vue'
 import i18n from '../i18n/index.js'
 import { getTeamMember } from '../data/team-members.js'
 import { useFullPageScroll } from '../composables/useFullPageScroll'
@@ -310,6 +256,31 @@ onMounted(() => {
   gap: 50px;
   align-items: center;
 }
+
+/* ===== 返回按钮 (顶部) ===== */
+.back-button-top {
+  background: #f5f5f5;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.btn-back-top {
+  display: inline-block;
+  padding: 10px 25px;
+  background: #667eea;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s;
+  font-size: 0.95rem;
+}
+
+.btn-back-top:hover {
+  background: #764ba2;
+  transform: translateX(-5px);
+}
+
 
 .hero-image {
   text-align: center;

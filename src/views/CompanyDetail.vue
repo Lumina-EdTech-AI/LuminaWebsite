@@ -1,5 +1,6 @@
 <template>
   <div class="company-detail">
+    <Header />
     <!-- 导航面包屑 -->
     <div class="breadcrumb">
       <div class="container">
@@ -197,6 +198,7 @@
       </section>
     </div>
   </div>
+  <Footer />
 </template>
 
 <script setup>
