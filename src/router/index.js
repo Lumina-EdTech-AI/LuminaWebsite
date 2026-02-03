@@ -15,6 +15,11 @@ const router = createRouter({
       component: () => import('../views/Home.vue')
     },
     {
+      path: '/team/:id',
+      name: 'team-detail',
+      component: () => import('../views/TeamDetail.vue')
+    },
+    {
       path: '/student',
       name: 'student',
       beforeEnter: () => {

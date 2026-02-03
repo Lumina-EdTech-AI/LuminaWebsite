@@ -1,5 +1,20 @@
 // English language pack
 export default {
+  common: {
+    home: 'Home',
+    notFound: 'Team member not found',
+    backToTeam: 'Back to Team',
+    viewProfile: 'View Profile'
+  },
+  teamDetail: {
+    about: 'About',
+    education: 'Education',
+    experience: 'Work Experience',
+    achievements: 'Key Achievements',
+    publications: 'Publications & Works',
+    expertise: 'Expertise',
+    interests: 'Interests'
+  },
   header: {
     title: 'Lumina Education Group',
     nav: {

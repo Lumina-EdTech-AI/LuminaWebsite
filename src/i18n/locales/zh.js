@@ -1,5 +1,19 @@
-// 中文语言包
 export default {
+  common: {
+    home: '首页',
+    notFound: '团队成员不存在',
+    backToTeam: '返回团队',
+    viewProfile: '查看档案'
+  },
+  teamDetail: {
+    about: '关于',
+    education: '教育背景',
+    experience: '职业经历',
+    achievements: '主要成就',
+    publications: '著作与发表',
+    expertise: '专业领域',
+    interests: '兴趣爱好'
+  },
   header: {
     title: '麓鸣教育集团 Lumina Education Group',
     nav: {
