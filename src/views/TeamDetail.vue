@@ -111,39 +111,6 @@
         </div>
       </section>
 
-      <!-- 主要成就 -->
-      <!-- 返回按钮 -->
-      <section class="section back-section">
-        <div class="container">
-          <router-link to="/#team" class="btn-back">
-            ← {{ i18n.t('common.backToTeam') }}
-          </router-link>
-        </div>
-      </section>
-            <div v-for="(pub, index) in member.publications"
-                 :key="index"
-                 class="publication-item"
-                 data-aos="fade-up"
-                 :data-aos-delay="100 * index">
-              <div class="pub-marker">
-                <i class="icon-book"></i>
-              </div>
-              <div class="pub-content">
-                <h4 class="pub-title">{{ pub.title }}</h4>
-                <h4 class="pub-title pub-title-en">{{ pub.titleEn }}</h4>
-                <div class="pub-meta">
-                  <span class="pub-type">{{ pub.type }}</span>
-                  <span class="pub-type pub-type-en">{{ pub.typeEn }}</span>
-                  <span class="pub-year">{{ pub.year }}</span>
-                  <span v-if="pub.journal" class="pub-journal">{{ pub.journal }}</span>
-                  <span v-if="pub.venue" class="pub-venue">{{ pub.venue }}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- 返回按钮 -->
       <section class="section back-section">
         <div class="container">
