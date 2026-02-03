@@ -24,6 +24,21 @@ export default {
     organization: '组织架构',
     socialResponsibility: '社会责任'
   },
+  projectsDetail: {
+    title: '麓鸣项目展示',
+    subtitle: '探索我们的创新项目，见证教育未来的力量',
+    projects: '项目展示',
+    allProjects: '全部项目',
+    viewDetails: '查看详情',
+    backToProjects: '返回项目',
+    backHome: '返回首页',
+    overview: '项目概述',
+    features: '核心特性',
+    metrics: '关键指标',
+    technologies: '技术栈',
+    relatedProjects: '相关项目',
+    impact: '项目影响'
+  },
   header: {
     title: '麓鸣教育集团 Lumina Education Group',
     nav: {

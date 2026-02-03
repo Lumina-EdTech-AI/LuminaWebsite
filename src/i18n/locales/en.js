@@ -25,6 +25,21 @@ export default {
     organization: 'Organization',
     socialResponsibility: 'Social Responsibility'
   },
+  projectsDetail: {
+    title: 'Lumina Projects',
+    subtitle: 'Explore our innovative projects and witness the power of education\'s future',
+    projects: 'Projects',
+    allProjects: 'All Projects',
+    viewDetails: 'View Details',
+    backToProjects: 'Back to Projects',
+    backHome: 'Back to Home',
+    overview: 'Project Overview',
+    features: 'Key Features',
+    metrics: 'Key Metrics',
+    technologies: 'Tech Stack',
+    relatedProjects: 'Related Projects',
+    impact: 'Project Impact'
+  },
   header: {
     title: 'Lumina Education Group',
     nav: {
