@@ -13,29 +13,28 @@ export const teamMembers = [
     avatar: '/images/team-sissi.png',
     shortBio: '教育科技领军人物，10年+行业经验',
     shortBioEn: 'EdTech pioneer with 10+ years of industry experience',
-    
     // 详细生平
     bio: '马佳茜是麓鸣教育集团的创始人兼CEO，带领公司在教育和AI领域取得突出成就。她以其远见卓识和领导力，将麓鸣打造成为中国领先的教育科技企业。',
     bioEn: 'Sissi Ma is the founder and CEO of Lumina Education Group, leading the company to remarkable achievements in education and AI technology. With her visionary leadership, she has transformed Lumina into a leading EdTech company in China.',
-    
     // 教育背景
     background: {
       education: [
         {
-          degree: 'MBA',
-          field: '工商管理',
-          university: '清华大学',
-          year: 2008,
-          degreeEn: 'Master of Business Administration',
-          universityEn: 'Tsinghua University'
+          degree: 'JD',
+          field: '法律',
+          university: '伦敦政治经济学院 (LSE)',
+          year: 2016,
+          degreeEn: 'Juris Doctor',
+          universityEn: 'London School of Economics (LSE)',
+          certified: true
         },
         {
-          degree: '学士学位',
-          field: '计算机科学',
-          university: '北京大学',
-          year: 2006,
-          degreeEn: 'Bachelor of Science',
-          universityEn: 'Peking University'
+          degree: '双学位',
+          field: '教育管理 & 国际商务',
+          university: '华东师范大学 / Kings College London',
+          year: 2016,
+          degreeEn: 'Dual Degree',
+          universityEn: 'East China Normal University / Kings College London'
         }
       ],
       // 工作经历
@@ -67,7 +66,6 @@ export const teamMembers = [
         }
       ]
     },
-    
     // 主要成就
     achievements: [
       '2019年入选"中国EdTech 40 Under 40"领导者',
@@ -85,7 +83,6 @@ export const teamMembers = [
       'Awarded "Most Influential Female CEO"',
       'Recognized as "Education Innovation Leader in China"'
     ],
-    
     // 著作和发表
     publications: [
       {
@@ -112,34 +109,8 @@ export const teamMembers = [
         typeEn: 'Conference Keynote'
       }
     ],
-    
     // 个人特长
-    expertise: [
-      '教育战略规划',
-      '产品创新',
-      '团队领导',
-      '资本融资',
-      '国际拓展'
-    ],
-    expertiseEn: [
-      'Education Strategy',
-      'Product Innovation',
-      'Team Leadership',
-      'Capital Raising',
-      'International Expansion'
-    ],
-    
-    // 社交媒体
-    
-    // 个人格言
-    quote: '教育改变生命，科技加速教育。',
-    quoteEn: 'Education changes lives. Technology accelerates education.',
-    
-    // 兴趣爱好
-    interests: ['教育创新', '人工智能', '阅读', '旅游', '瑜伽'],
-    interestsEn: ['Education Innovation', 'Artificial Intelligence', 'Reading', 'Travel', 'Yoga']
   },
-  
   {
     id: 'benny',
     name: '方旋',
@@ -149,35 +120,25 @@ export const teamMembers = [
     avatar: '/images/team-benny.png',
     shortBio: '技术架构师，AI和大数据专家',
     shortBioEn: 'Tech architect specializing in AI and big data',
-    
     bio: '方旋是麓鸣教育的CTO，拥有深厚的技术功底和AI研究背景。他主导开发了麓鸣核心的智能学习引擎，将尖端的深度学习技术应用于教育领域。',
     bioEn: 'Benny Fang is the CTO of Lumina Education with deep technical expertise and AI research background. He spearheaded development of Lumina\'s intelligent learning engine, applying cutting-edge deep learning to education.',
-    
     background: {
       education: [
         {
-          degree: '博士学位',
-          field: '计算机科学',
-          university: '斯坦福大学',
-          year: 2012,
-          degreeEn: 'Ph.D. in Computer Science',
-          universityEn: 'Stanford University'
-        },
-        {
           degree: '硕士学位',
-          field: '人工智能',
-          university: '卡内基梅隆大学',
-          year: 2009,
-          degreeEn: 'M.S. in Artificial Intelligence',
-          universityEn: 'Carnegie Mellon University'
+          field: '计算机科学',
+          university: '乔治亚理工学院 (Georgia Tech)',
+          year: 2014,
+          degreeEn: 'M.S. in Computer Science',
+          universityEn: 'Georgia Institute of Technology'
         },
         {
           degree: '学士学位',
-          field: '计算机科学',
-          university: '清华大学',
-          year: 2007,
-          degreeEn: 'B.S. in Computer Science',
-          universityEn: 'Tsinghua University'
+          field: '软件工程 & 商业副科',
+          university: '多伦多大学',
+          year: 2016,
+          degreeEn: 'B.S. in Software Engineering (Minor: Business)',
+          universityEn: 'University of Toronto'
         }
       ],
       experience: [
@@ -207,7 +168,6 @@ export const teamMembers = [
         }
       ]
     },
-    
     achievements: [
       '在Google Brain发表5篇顶级会议论文 (NeurIPS, ICML)',
       '获得"AI 40 Under 40"认可',
@@ -224,7 +184,6 @@ export const teamMembers = [
       'Lumina platform processes 1B+ learning data points daily',
       'Awarded "Best Technical Innovation of the Year"'
     ],
-    
     publications: [
       {
         title: '《深度学习在自适应学习中的应用》',
@@ -247,30 +206,7 @@ export const teamMembers = [
         titleEn: 'Real-time Processing Architecture for Large-scale Education Data'
       }
     ],
-    
-    expertise: [
-      '深度学习',
-      '自然语言处理',
-      '推荐系统',
-      '大数据处理',
-      '云架构设计'
-    ],
-    expertiseEn: [
-      'Deep Learning',
-      'Natural Language Processing',
-      'Recommendation Systems',
-      'Big Data Processing',
-      'Cloud Architecture'
-    ],
-    
-    
-    quote: '好的架构，简单的代码，强大的系统。',
-    quoteEn: 'Good architecture, simple code, powerful systems.',
-    
-    interests: ['开源社区', '机器学习', '编码', '篮球', '象棋'],
-    interestsEn: ['Open Source', 'Machine Learning', 'Coding', 'Basketball', 'Chess']
   },
-  
   {
     id: 'david',
     name: 'David Fang',
@@ -280,10 +216,8 @@ export const teamMembers = [
     avatar: '/images/team-david.png',
     shortBio: '国际教育专家，拥有20年+教学经验',
     shortBioEn: 'International education expert with 20+ years of teaching experience',
-    
     bio: 'David Fang是麓鸣教育的联合创始人，是国际教育领域的资深人士。他将全球先进的教学理念和方法论融入到麓鸣的课程体系中，帮助数十万学生实现教育目标。',
     bioEn: 'David Fang is Co-Founder of Lumina Education and a veteran in international education. He incorporates global best practices and methodologies into Lumina\'s curriculum, helping hundreds of thousands of students achieve their educational goals.',
-    
     background: {
       education: [
         {
@@ -330,7 +264,6 @@ export const teamMembers = [
         }
       ]
     },
-    
     achievements: [
       '开发了被全球30+所学校采用的国际课程体系',
       '指导超过500名学生进入世界顶尖大学',
@@ -347,7 +280,6 @@ export const teamMembers = [
       'Collaborated with Oxford and Cambridge on educational resources',
       'Awarded "Excellence in Teaching Award"'
     ],
-    
     publications: [
       {
         title: '《21世纪全球化教育指南》',
@@ -362,138 +294,96 @@ export const teamMembers = [
         titleEn: 'Student-Centered Learning Approaches'
       }
     ],
-    
-    expertise: [
-      '国际课程开发',
-      '教学方法论',
-      '学生指导',
-      '国际教育认证',
-      '教师培训'
-    ],
-    expertiseEn: [
-      'International Curriculum Development',
-      'Teaching Methodology',
-      'Student Mentoring',
-      'International Education Accreditation',
-      'Teacher Training'
-    ],
-    
-    
-    quote: '教育是打开世界的钥匙。',
-    quoteEn: 'Education is the key to opening the world.',
-    
-    interests: ['教育政策', '文学', '旅游', '摄影', '志愿服务'],
-    interestsEn: ['Education Policy', 'Literature', 'Travel', 'Photography', 'Volunteering']
   },
-  
   {
     id: 'qiu',
     name: '裘玲霞',
-    nameEn: 'Dr. Lingxia Qiu',
-    role: '首席教育顾问',
-    roleEn: 'Chief Education Advisor',
+    nameEn: 'Dr. Lynn Qiu',
+    role: '医学顾问',
+    roleEn: 'Medical Advisor',
     avatar: '/images/team-qiu.jpg',
-    shortBio: '教育学博士，儿童心理学专家',
-    shortBioEn: 'Ph.D. in Education, Expert in Child Psychology',
-    
-    bio: '裘玲霞博士是享誉国际的教育研究专家，专攻儿童心理学和教学效果评估。她的研究为麓鸣的个性化教育方案提供了科学依据和理论支撑。',
-    bioEn: 'Dr. Qiu is an internationally renowned education research expert specializing in child psychology and teaching effectiveness. Her research provides scientific foundation for Lumina\'s personalized education solutions.',
-    
+    shortBio: '医学教授，心血管医学专家',
+    shortBioEn: 'Medical Professor, Cardiovascular Medicine Specialist',
+    bio: '裘玲霞博士是著名医学教授和心血管医学专家。曾担任上海第六人民医院心血管科科长和副院长，在医学教育和临床研究领域有深厚的成就和国际影响力。',
+    bioEn: 'Dr. Lynn Qiu is a renowned medical professor and cardiovascular medicine specialist. She served as Director of Cardiology Department and Vice-President at Shanghai Sixth People\'s Hospital, with significant achievements in medical education and clinical research.',
     background: {
       education: [
         {
           degree: '博士学位',
-          field: '教育学',
-          university: '瑞士苏黎世大学',
-          year: 2005,
-          degreeEn: 'Ph.D. in Education',
-          universityEn: 'University of Zurich'
+          field: '心血管医学',
+          university: '复旦大学医学院',
+          year: 2008,
+          degreeEn: 'Ph.D. in Cardiovascular Medicine',
+          universityEn: 'Fudan University School of Medicine'
         },
         {
           degree: '硕士学位',
-          field: '儿童心理学',
-          university: '北京师范大学',
-          year: 2001,
-          degreeEn: 'M.A. in Child Psychology',
-          universityEn: 'Beijing Normal University'
+          field: '内科医学',
+          university: '上海交通大学医学院',
+          year: 2003,
+          degreeEn: 'M.D. in Internal Medicine',
+          universityEn: 'Shanghai Jiao Tong University School of Medicine'
         }
       ],
       experience: [
         {
-          position: '首席教育顾问',
+          position: '医学顾问',
           company: '麓鸣教育集团',
-          duration: '2015 - 现在',
-          description: '指导教学策略和课程设计',
-          positionEn: 'Chief Education Advisor',
+          duration: '2020 - 现在',
+          description: '指导教育与健康科学相关项目',
+          positionEn: 'Medical Advisor',
           companyEn: 'Lumina Education Group'
         },
         {
-          position: '教授',
-          company: '北京师范大学',
-          duration: '2005 - 2015',
-          description: '教授教育心理学和研究方法',
-          positionEn: 'Professor',
-          companyEn: 'Beijing Normal University'
+          position: '副院长 & 心血管科科长',
+          company: '上海第六人民医院',
+          duration: '2010 - 2020',
+          description: '管理心血管科室，领导临床和研究工作',
+          positionEn: 'Vice-President & Director of Cardiology',
+          companyEn: 'Shanghai Sixth People\'s Hospital'
+        },
+        {
+          position: '医学教授',
+          company: '复旦大学医学院',
+          duration: '2008 - 现在',
+          description: '教授心血管医学和临床实践',
+          positionEn: 'Medical Professor',
+          companyEn: 'Fudan University School of Medicine'
         }
       ]
     },
-    
     achievements: [
-      '发表100+篇教育心理学研究论文',
-      '获得国家自然科学基金重点项目资助',
-      '被引用超过5000次',
-      '获评中国教育学会杰出贡献奖',
-      '主持多个国际教育研究合作项目',
-      '获得教育部教学成果特等奖'
+      '发表50+篇心血管医学研究论文',
+      '获得国家自然科学基金资助',
+      '被引用超过1000次',
+      '获评复旦大学青年杰出教师',
+      '主导多项临床与教学创新项目',
+      '获得卫生部医学科技奖'
     ],
     achievementsEn: [
-      'Published 100+ research papers in educational psychology',
-      'Awarded key research grants from National Science Foundation',
-      'Over 5000 citations',
-      'Received Distinguished Contribution Award from Chinese Education Association',
-      'Led multiple international education research collaborations',
-      'Awarded Presidential Educational Achievement Award'
+      'Published 50+ cardiovascular research papers',
+      'Awarded National Science Foundation grants',
+      'Over 1000 citations',
+      'Recognized as Young Distinguished Professor at Fudan University',
+      'Led multiple clinical and teaching innovation projects',
+      'Awarded Ministry of Health Medical Science and Technology Award'
     ],
-    
     publications: [
       {
-        title: '《儿童学习科学基础》',
+        title: '《心血管疾病预防与管理》',
         type: '著作',
-        year: 2020,
-        titleEn: 'Scientific Foundations of Child Learning'
+        year: 2018,
+        titleEn: 'Cardiovascular Disease Prevention and Management'
       },
       {
-        title: '个性化教学效果的长期跟踪研究',
+        title: '新型抗凝血药物的临床应用研究',
         type: '期刊论文',
         year: 2019,
-        titleEn: 'Long-term Study on Personalized Teaching Effectiveness',
-        journal: 'Journal of Educational Research'
+        titleEn: 'Clinical Application Study of Novel Anticoagulants',
+        journal: 'Journal of Cardiovascular Medicine'
       }
     ],
-    
-    expertise: [
-      '儿童心理学',
-      '教学效果评估',
-      '课程设计',
-      '教育研究方法',
-      '学生发展评价'
-    ],
-    expertiseEn: [
-      'Child Psychology',
-      'Teaching Effectiveness',
-      'Curriculum Design',
-      'Education Research Methods',
-      'Student Development Assessment'
-    ],
-    
-    
-    quote: '理解孩子，就能打开教育的新世界。',
-    quoteEn: 'Understanding children opens new worlds in education.',
-    
-    interests: ['教育研究', '写作', '艺术', '古典音乐'],
-    interestsEn: ['Education Research', 'Writing', 'Art', 'Classical Music']
   },
-  
   {
     id: 'anderson',
     name: 'Robert Anderson',
@@ -503,10 +393,8 @@ export const teamMembers = [
     avatar: '/images/team-professor.png',
     shortBio: '人工智能和教育科学研究者',
     shortBioEn: 'Researcher in AI and Educational Science',
-    
     bio: 'Dr. Robert Anderson是麻省理工学院的杰出教授，在AI教育应用领域有深入研究。他与麓鸣合作开发的智能教学系统已发表多篇高影响力论文。',
     bioEn: 'Dr. Anderson is a distinguished professor at MIT with deep expertise in AI applications in education. His collaborative research with Lumina on intelligent tutoring systems has resulted in high-impact publications.',
-    
     background: {
       education: [
         {
@@ -537,7 +425,6 @@ export const teamMembers = [
         }
       ]
     },
-    
     achievements: [
       '在顶级会议发表50+篇论文 (IJCAI, AAAI等)',
       '获得5项美国专利',
@@ -552,30 +439,7 @@ export const teamMembers = [
       'Mentored 30+ Ph.D. students and researchers',
       'Awarded for Outstanding Contribution to Education Innovation'
     ],
-    
-    expertise: [
-      '人工智能',
-      '机器学习',
-      '教育技术',
-      '自适应系统',
-      '人机交互'
-    ],
-    expertiseEn: [
-      'Artificial Intelligence',
-      'Machine Learning',
-      'Educational Technology',
-      'Adaptive Systems',
-      'Human-Computer Interaction'
-    ],
-    
-    
-    quote: 'AI的未来在教育。',
-    quoteEn: 'The future of AI is in education.',
-    
-    interests: ['AI研究', '教育创新', '航海', '爵士音乐'],
-    interestsEn: ['AI Research', 'Education Innovation', 'Sailing', 'Jazz']
   },
-  
   {
     id: 'mitchell',
     name: 'Jennifer Mitchell',
@@ -585,10 +449,8 @@ export const teamMembers = [
     avatar: '/images/team-female.png',
     shortBio: '教育数据科学和学习分析专家',
     shortBioEn: 'Expert in Educational Data Science and Learning Analytics',
-    
     bio: 'Dr. Jennifer Mitchell是哥伦比亚大学教学与学习部的教授，专注于学习分析和数据驱动教育。她为麓鸣平台的数据分析和学生成长追踪系统提供专业指导。',
     bioEn: 'Dr. Mitchell is a professor in the Department of Teaching and Learning at Columbia University specializing in learning analytics and data-driven education. She provides expert guidance on Lumina\'s data analytics and student progress tracking systems.',
-    
     background: {
       education: [
         {
@@ -619,7 +481,6 @@ export const teamMembers = [
         }
       ]
     },
-    
     achievements: [
       '发表60+篇教育数据科学论文',
       '领导国际学习分析学会',
@@ -634,28 +495,6 @@ export const teamMembers = [
       'Established 3 educational data labs',
       'Supervised 20+ doctoral students'
     ],
-    
-    expertise: [
-      '学习分析',
-      '教育数据科学',
-      '统计方法',
-      '学生成效评估',
-      '大数据应用'
-    ],
-    expertiseEn: [
-      'Learning Analytics',
-      'Educational Data Science',
-      'Statistical Methods',
-      'Student Outcomes Assessment',
-      'Big Data Applications'
-    ],
-    
-    
-    quote: '数据讲述教育故事。',
-    quoteEn: 'Data tells the story of education.',
-    
-    interests: ['数据科学', '教育创新', '远足', '摄影'],
-    interestsEn: ['Data Science', 'Education Innovation', 'Hiking', 'Photography']
   }
 ]
 

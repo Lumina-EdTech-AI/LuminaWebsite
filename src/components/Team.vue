@@ -54,29 +54,27 @@
           </div>
         </router-link>
 
-        <router-link to="/team/anderson" class="team-member team-link" data-aos="fade-up" data-aos-delay="600">
+        <div class="team-member" data-aos="fade-up" data-aos-delay="600">
           <div class="member-photo">
             <img src="/images/team-professor.png" alt="Dr. Robert Anderson" loading="lazy" />
-            <div class="member-overlay">{{ i18n.t('common.viewProfile') }}</div>
           </div>
           <div class="member-info">
             <h3>{{ i18n.t('team.members.anderson.name') }}</h3>
             <p class="member-role">{{ i18n.t('team.members.anderson.role') }}</p>
             <p class="member-desc">{{ i18n.t('team.members.anderson.desc') }}</p>
           </div>
-        </router-link>
+        </div>
 
-        <router-link to="/team/mitchell" class="team-member team-link" data-aos="fade-up" data-aos-delay="700">
+        <div class="team-member" data-aos="fade-up" data-aos-delay="700">
           <div class="member-photo">
             <img src="/images/team-female.png" alt="Dr. Jennifer Mitchell" loading="lazy" />
-            <div class="member-overlay">{{ i18n.t('common.viewProfile') }}</div>
           </div>
           <div class="member-info">
             <h3>{{ i18n.t('team.members.mitchell.name') }}</h3>
             <p class="member-role">{{ i18n.t('team.members.mitchell.role') }}</p>
             <p class="member-desc">{{ i18n.t('team.members.mitchell.desc') }}</p>
           </div>
-        </router-link>
+        </div>
       </div>
     </div>
   </section>
