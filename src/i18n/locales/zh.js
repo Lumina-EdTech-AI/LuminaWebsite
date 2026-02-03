@@ -95,6 +95,7 @@ export default {
       button: '立即咨询'
     }
   },
+  projectsDetail: {
     title: '麓鸣项目展示',
     subtitle: '探索我们的创新项目，见证教育未来的力量',
     projects: '项目展示',
