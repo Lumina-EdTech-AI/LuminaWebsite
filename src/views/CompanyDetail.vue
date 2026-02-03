@@ -13,9 +13,10 @@
 
     <div class="company-detail-content">
       <!-- Hero Section -->
-      <div class="hero-section">
-        <div class="container">
-          <div class="hero-content" data-aos="fade-up">
+      <div class="hero-section" style="background-image: url('/images/illustrations/company.webp'); background-size: cover; background-position: center;">
+        <div class="hero-overlay"></div>
+        <div class="container" data-aos="fade-up">
+          <div class="hero-content">
             <h1 class="company-name">{{ company.basic.name }}</h1>
             <h2 class="company-name-en">{{ company.basic.nameEn }}</h2>
             <p class="company-slogan">{{ company.basic.slogan }}</p>

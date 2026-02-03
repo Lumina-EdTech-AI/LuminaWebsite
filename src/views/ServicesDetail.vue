@@ -10,9 +10,10 @@
     </div>
 
     <!-- Hero Section -->
-    <div class="hero-section">
-      <div class="container">
-        <div class="hero-content" data-aos="fade-up">
+    <div class="hero-section" style="background-image: url('/images/illustrations/services.webp'); background-size: cover; background-position: center;">
+      <div class="hero-overlay"></div>
+      <div class="container" data-aos="fade-up">
+        <div class="hero-content">
           <h1>{{ i18n.t('servicesDetail.title') }}</h1>
           <p>{{ i18n.t('servicesDetail.subtitle') }}</p>
         </div>
@@ -198,6 +199,24 @@ onMounted(() => {
   color: white;
   padding: 100px 0;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(102, 126, 234, 0.4);
+  backdrop-filter: blur(1px);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
 }
 
 .hero-content h1 {

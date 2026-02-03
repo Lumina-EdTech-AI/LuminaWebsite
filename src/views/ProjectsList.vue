@@ -11,12 +11,11 @@
 
     <div class="projects-content">
       <!-- Hero Section -->
-      <div class="hero-section">
-        <div class="container">
-          <div class="hero-content" data-aos="fade-up">
-            <h1>{{ i18n.t('projectsDetail.title') }}</h1>
-            <p>{{ i18n.t('projectsDetail.subtitle') }}</p>
-          </div>
+      <div class="hero-section" style="background-image: url('/images/illustrations/projects.webp'); background-size: cover; background-position: center;">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content" data-aos="fade-up">
+          <h1>{{ i18n.t('projectsDetail.title') }}</h1>
+          <p>{{ i18n.t('projectsDetail.subtitle') }}</p>
         </div>
       </div>
 
@@ -163,6 +162,18 @@ onMounted(() => {
   color: white;
   padding: 100px 0;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(102, 126, 234, 0.5);
+  backdrop-filter: blur(2px);
 }
 
 .hero-section h1 {
