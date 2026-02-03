@@ -188,15 +188,7 @@
         </div>
       </section>
 
-      <!-- 返回 -->
-      <section class="section back-section">
-        <div class="container">
-          <router-link to="/#about" class="btn-back">
-            {{ i18n.t('common.backToAbout') }}
-          </router-link>
-        </div>
-      </section>
-    </div>
+      </div>
   </div>
   <Footer />
 </template>

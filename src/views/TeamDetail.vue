@@ -43,83 +43,7 @@
         </div>
       </div>
 
-      <!-- 返回按钮 (顶部) -->
-      <div class="back-button-top">
-        <div class="container">
-          <router-link to="/#team" class="btn-back-top">
-            ← {{ i18n.t('common.backToTeam') }}
-          </router-link>
-        </div>
       </div>
-
-      <!-- 简介 -->
-      <section class="section bio-section">
-        <div class="container">
-          <h2 class="section-title">{{ i18n.t('teamDetail.about') }}</h2>
-          <div class="bio-content">
-            <p class="bio-text" data-aos="fade-up">{{ member.bio }}</p>
-            <p class="bio-text bio-en" data-aos="fade-up" data-aos-delay="100">{{ member.bioEn }}</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- 教育背景 -->
-      <section class="section education-section">
-        <div class="container">
-          <h2 class="section-title">{{ i18n.t('teamDetail.education') }}</h2>
-          <div class="education-timeline">
-            <div v-for="(edu, index) in member.background.education"
-                 :key="index"
-                 class="education-item"
-                 data-aos="fade-up"
-                 :data-aos-delay="100 * index">
-              <div class="edu-marker"></div>
-              <div class="edu-content">
-                <h3 class="degree">{{ edu.degree }} - {{ edu.field }}</h3>
-                <h3 class="degree degree-en">{{ edu.degreeEn }}</h3>
-                <p class="university">{{ edu.university }} ({{ edu.year }})</p>
-                <p class="university uni-en">{{ edu.universityEn }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 工作经历 -->
-      <section class="section experience-section">
-        <div class="container">
-          <h2 class="section-title">{{ i18n.t('teamDetail.experience') }}</h2>
-          <div class="experience-timeline">
-            <div v-for="(exp, index) in member.background.experience"
-                 :key="index"
-                 class="experience-item"
-                 data-aos="fade-up"
-                 :data-aos-delay="100 * index">
-              <div class="exp-marker"></div>
-              <div class="exp-content">
-                <div class="exp-header">
-                  <h3 class="position">{{ exp.position }}</h3>
-                  <h3 class="position position-en">{{ exp.positionEn }}</h3>
-                  <span class="duration">{{ exp.duration }}</span>
-                </div>
-                <p class="company">{{ exp.company }}</p>
-                <p class="company company-en">{{ exp.companyEn }}</p>
-                <p class="description">{{ exp.description }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 返回按钮 -->
-      <section class="section back-section">
-        <div class="container">
-          <router-link to="/#team" class="btn-back">
-            ← {{ i18n.t('common.backToTeam') }}
-          </router-link>
-        </div>
-      </section>
-    </div>
   </div>
   <Footer />
 </template>
@@ -247,7 +171,6 @@ onMounted(() => {
   background: #764ba2;
   transform: translateX(-5px);
 }
-
 
 .hero-image {
   text-align: center;

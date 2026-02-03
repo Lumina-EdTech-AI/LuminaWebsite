@@ -78,15 +78,7 @@
         </div>
       </section>
 
-      <!-- 返回 -->
-      <section class="section back-section">
-        <div class="container">
-          <router-link to="/" class="btn-back">
-            {{ i18n.t('common.backHome') }}
-          </router-link>
-        </div>
-      </section>
-    </div>
+      </div>
     <Footer />
   </div>
 </template>
