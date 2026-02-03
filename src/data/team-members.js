@@ -211,87 +211,89 @@ export const teamMembers = [
     id: 'david',
     name: 'David Fang',
     nameEn: 'David Fang',
-    role: '联合创始人',
-    roleEn: 'Co-Founder',
+    role: '联合创始人 & 技术教育指导',
+    roleEn: 'Co-Founder & Technology & Education Advisor',
     avatar: '/images/team-david.png',
-    shortBio: '国际教育专家，拥有20年+教学经验',
-    shortBioEn: 'International education expert with 20+ years of teaching experience',
-    bio: 'David Fang是麓鸣教育的联合创始人，是国际教育领域的资深人士。他将全球先进的教学理念和方法论融入到麓鸣的课程体系中，帮助数十万学生实现教育目标。',
-    bioEn: 'David Fang is Co-Founder of Lumina Education and a veteran in international education. He incorporates global best practices and methodologies into Lumina\'s curriculum, helping hundreds of thousands of students achieve their educational goals.',
+    shortBio: '多伦多大学商科学士，斯坦福大学AI人机交互研究员',
+    shortBioEn: 'B.B.A. from University of Toronto, AI HCI Researcher at Stanford',
+    bio: 'David Fang是麓鸣教育的联合创始人，目前在斯坦福大学从事人工智能与人机交互的前沿研究。他同时为麓鸣提供技术创新和教育策略的专业指导，推动教育技术的融合发展。',
+    bioEn: 'David Fang is Co-Founder of Lumina Education and currently conducting cutting-edge research on AI and Human-Computer Interaction at Stanford University. He provides professional guidance on technology innovation and education strategy for Lumina.',
     background: {
       education: [
         {
-          degree: '硕士学位',
-          field: '教育学',
-          university: '哈佛大学',
-          year: 2000,
-          degreeEn: 'Master of Education',
-          universityEn: 'Harvard University'
+          degree: '研究员',
+          field: '人工智能与人机交互',
+          university: '斯坦福大学',
+          year: 2023,
+          degreeEn: 'Research Fellow',
+          universityEn: 'Stanford University (Current)',
+          current: true
         },
         {
           degree: '学士学位',
-          field: '英文文学',
-          university: '普林斯顿大学',
-          year: 1998,
-          degreeEn: 'B.A. in English Literature',
-          universityEn: 'Princeton University'
+          field: '商业管理',
+          university: '多伦多大学',
+          year: 2012,
+          degreeEn: 'B.B.A. in Business Administration',
+          universityEn: 'University of Toronto'
         }
       ],
       experience: [
         {
-          position: '联合创始人',
+          position: '联合创始人 & 技术教育指导',
           company: '麓鸣教育集团',
           duration: '2015 - 现在',
-          description: '领导教学内容开发和国际课程合作',
-          positionEn: 'Co-Founder',
+          description: '提供技术创新和教育策略指导，推动AI在教育中的应用',
+          positionEn: 'Co-Founder & Technology & Education Advisor',
           companyEn: 'Lumina Education Group'
         },
         {
-          position: '教学总监',
-          company: '国际教育基金会',
-          duration: '2008 - 2015',
-          description: '开发和推进全球教育项目',
-          positionEn: 'Director of Education',
-          companyEn: 'International Education Foundation'
+          position: '研究员',
+          company: '斯坦福大学人机交互实验室',
+          duration: '2023 - 现在',
+          description: '研究AI和人机交互在教育中的应用',
+          positionEn: 'Research Fellow',
+          companyEn: 'Stanford University HCI Lab'
         },
         {
-          position: '高级教师',
-          company: '英国伊顿公学',
-          duration: '2000 - 2008',
-          description: '教授英文、历史和国际文凭课程',
-          positionEn: 'Senior Teacher',
-          companyEn: 'Eton College, UK'
+          position: '技术顾问',
+          company: '多家教育科技初创',
+          duration: '2016 - 2023',
+          description: '为教育科技企业提供技术和战略咨询',
+          positionEn: 'Technical Advisor',
+          companyEn: 'EdTech Startups'
         }
       ]
     },
     achievements: [
-      '开发了被全球30+所学校采用的国际课程体系',
-      '指导超过500名学生进入世界顶尖大学',
-      '获得"全球教育创新者"荣誉',
-      '撰写10+本畅销教育书籍',
-      '与Oxford和Cambridge合作开发教学资源',
-      '获得"卓越教学成就奖"'
+      '在斯坦福大学发表5+篇AI人机交互研究论文',
+      '获得教育技术创新奖',
+      '推动麓鸣AI教师产品在100+所学校的应用',
+      '领导多个教育AI项目的开发和部署',
+      '获得"年度教育创新领导者"称号',
+      '受邀在国际教育科技大会演讲'
     ],
     achievementsEn: [
-      'Developed international curriculum adopted by 30+ schools globally',
-      'Guided 500+ students into top-tier universities worldwide',
-      'Named "Global Education Innovator"',
-      'Authored 10+ bestselling education books',
-      'Collaborated with Oxford and Cambridge on educational resources',
-      'Awarded "Excellence in Teaching Award"'
+      'Published 5+ research papers on AI and HCI at Stanford',
+      'Awarded Educational Technology Innovation Prize',
+      'Led deployment of Lumina AI Teacher in 100+ schools',
+      'Led development and deployment of multiple education AI projects',
+      'Named "Annual Education Innovation Leader"',
+      'Invited keynote speaker at international EdTech conferences'
     ],
     publications: [
       {
-        title: '《21世纪全球化教育指南》',
-        type: '著作',
-        year: 2020,
-        titleEn: 'A Guide to Globalized Education in the 21st Century'
+        title: '《AI人机交互在个性化教育中的应用》',
+        type: '研究论文',
+        year: 2024,
+        titleEn: 'AI HCI Applications in Personalized Education'
       },
       {
-        title: '《学生中心的学习方法》',
-        type: '著作',
-        year: 2018,
-        titleEn: 'Student-Centered Learning Approaches'
+        title: '《教育技术融合的未来趋势》',
+        type: '论文',
+        year: 2023,
+        titleEn: 'Future Trends in Education Technology Integration',
+        journal: 'Journal of Educational Technology'
       }
     ],
   },
