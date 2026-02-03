@@ -2,8 +2,9 @@
 export default {
   common: {
     home: 'Home',
-    notFound: 'Team member not found',
+    notFound: 'Content not found',
     backToTeam: 'Back to Team',
+    backToAbout: 'Back to About',
     viewProfile: 'View Profile'
   },
   teamDetail: {
@@ -14,6 +15,15 @@ export default {
     publications: 'Publications & Works',
     expertise: 'Expertise',
     interests: 'Interests'
+  },
+  companyDetail: {
+    title: 'About Company',
+    values: 'Core Values',
+    history: 'Company History',
+    competencies: 'Core Competencies',
+    statistics: 'Key Statistics',
+    organization: 'Organization',
+    socialResponsibility: 'Social Responsibility'
   },
   header: {
     title: 'Lumina Education Group',
@@ -128,6 +138,7 @@ export default {
       desc1: 'The group deeply integrates global top educational resources, establishing close cooperation with leading UK universities and top institutions in China\'s strategic economic and technological zones. By introducing international curriculum systems such as AP, A-Level, and BTEC, we build diversified academic bridges, providing quality pathways to world-renowned universities.',
       desc2: 'We have assembled a professional team of professors from prestigious universities worldwide and internationally certified advisors, employing a dual-track cultivation model of "academic + practice" to empower students\' core competitiveness. From personalized course selection diagnosis and cross-cultural academic training to career-oriented research projects and competition guidance, we are committed to cultivating future talents with independent thinking, innovative spirit, and global leadership.'
     },
+    exploreMore: 'Learn More About Lumina'
     values: {
       innovation: {
         title: 'Innovation',

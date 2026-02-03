@@ -37,26 +37,6 @@
               </div>
               <p class="member-quote">{{ member.quote }}</p>
               <p class="member-quote quote-en">{{ member.quoteEn }}</p>
-              
-              <div class="contact-info">
-                <a v-if="member.socialMedia.email" 
-                   :href="`mailto:${member.socialMedia.email}`"
-                   class="contact-link">
-                  <i class="icon-email"></i> {{ member.socialMedia.email }}
-                </a>
-                <a v-if="member.socialMedia.linkedin" 
-                   :href="member.socialMedia.linkedin"
-                   target="_blank"
-                   class="contact-link">
-                  <i class="icon-linkedin"></i> LinkedIn
-                </a>
-                <a v-if="member.socialMedia.twitter" 
-                   :href="member.socialMedia.twitter"
-                   target="_blank"
-                   class="contact-link">
-                  <i class="icon-twitter"></i> Twitter
-                </a>
-              </div>
             </div>
           </div>
         </div>
@@ -391,31 +371,6 @@ onMounted(() => {
 .quote-en {
   font-size: 1rem;
   opacity: 0.8;
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-top: 30px;
-}
-
-.contact-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: white;
-  text-decoration: none;
-  padding: 10px 15px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  transition: all 0.3s;
-  width: fit-content;
-}
-
-.contact-link:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transform: translateX(5px);
 }
 
 /* ===== 简介Section ===== */

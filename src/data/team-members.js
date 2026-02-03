@@ -130,12 +130,6 @@ export const teamMembers = [
     ],
     
     // 社交媒体
-    socialMedia: {
-      linkedin: 'https://linkedin.com/in/sissi-ma',
-      twitter: 'https://twitter.com/sissima',
-      wechat: 'sissi_ma_lumina',
-      email: 'sissi@lumina-edu.cn'
-    },
     
     // 个人格言
     quote: '教育改变生命，科技加速教育。',
@@ -269,11 +263,6 @@ export const teamMembers = [
       'Cloud Architecture'
     ],
     
-    socialMedia: {
-      linkedin: 'https://linkedin.com/in/benny-fang',
-      github: 'https://github.com/bennyfang',
-      email: 'benny@lumina-edu.cn'
-    },
     
     quote: '好的架构，简单的代码，强大的系统。',
     quoteEn: 'Good architecture, simple code, powerful systems.',
@@ -389,10 +378,6 @@ export const teamMembers = [
       'Teacher Training'
     ],
     
-    socialMedia: {
-      linkedin: 'https://linkedin.com/in/david-fang',
-      email: 'david@lumina-edu.cn'
-    },
     
     quote: '教育是打开世界的钥匙。',
     quoteEn: 'Education is the key to opening the world.',
@@ -501,10 +486,6 @@ export const teamMembers = [
       'Student Development Assessment'
     ],
     
-    socialMedia: {
-      linkedin: 'https://linkedin.com/in/lingxia-qiu',
-      email: 'qiu@lumina-edu.cn'
-    },
     
     quote: '理解孩子，就能打开教育的新世界。',
     quoteEn: 'Understanding children opens new worlds in education.',
@@ -587,10 +568,6 @@ export const teamMembers = [
       'Human-Computer Interaction'
     ],
     
-    socialMedia: {
-      linkedin: 'https://linkedin.com/in/robert-anderson-mit',
-      email: 'anderson@lumina-edu.cn'
-    },
     
     quote: 'AI的未来在教育。',
     quoteEn: 'The future of AI is in education.',
@@ -673,10 +650,6 @@ export const teamMembers = [
       'Big Data Applications'
     ],
     
-    socialMedia: {
-      linkedin: 'https://linkedin.com/in/jennifer-mitchell',
-      email: 'mitchell@lumina-edu.cn'
-    },
     
     quote: '数据讲述教育故事。',
     quoteEn: 'Data tells the story of education.',

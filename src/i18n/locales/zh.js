@@ -1,8 +1,9 @@
 export default {
   common: {
     home: '首页',
-    notFound: '团队成员不存在',
+    notFound: '内容不存在',
     backToTeam: '返回团队',
+    backToAbout: '返回关于',
     viewProfile: '查看档案'
   },
   teamDetail: {
@@ -13,6 +14,15 @@ export default {
     publications: '著作与发表',
     expertise: '专业领域',
     interests: '兴趣爱好'
+  },
+  companyDetail: {
+    title: '公司介绍',
+    values: '核心价值观',
+    history: '公司历史',
+    competencies: '核心竞争力',
+    statistics: '关键数据',
+    organization: '组织架构',
+    socialResponsibility: '社会责任'
   },
   header: {
     title: '麓鸣教育集团 Lumina Education Group',
@@ -127,6 +137,7 @@ export default {
       desc1: '集团深度聚合全球顶尖教育资源，与英国顶尖大学及中国经济与科技战略区的顶尖高校、政府、企业开展紧密合作，通过引进AP、A-Level、BTEC等国际课程体系，搭建起多元化的学术桥梁，为学生提供通往世界名校的优质通道。',
       desc2: '同时，组建由海内外名校教授、国际认证导师构成的专业团队，以"学术 + 实践"双轨培养模式，赋能学生核心竞争力。从个性化选课诊断、跨文化学术培训、到职业导向的科研项目与竞赛指导，集团始终致力于培养具备独立思想、创新精神及全球领导力的未来人才。'
     },
+    exploreMore: '了解更多关于麓鸣'
     values: {
       innovation: {
         title: '创新',

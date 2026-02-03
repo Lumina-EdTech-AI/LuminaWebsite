@@ -20,6 +20,11 @@ const router = createRouter({
       component: () => import('../views/TeamDetail.vue')
     },
     {
+      path: '/company',
+      name: 'company-detail',
+      component: () => import('../views/CompanyDetail.vue')
+    },
+    {
       path: '/student',
       name: 'student',
       beforeEnter: () => {

@@ -39,6 +39,12 @@
             <p>{{ i18n.t('about.values.global.desc') }}</p>
           </div>
         </div>
+
+        <div class="explore-more" data-aos="fade-up" data-aos-delay="800">
+          <router-link to="/company" class="btn-explore">
+            {{ i18n.t('about.exploreMore') }}
+          </router-link>
+        </div>
       </div>
     </div>
   </section>
@@ -47,3 +53,27 @@
 <script setup>
 import i18n from '../i18n/index.js'
 </script>
+
+<style scoped>
+.explore-more {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.btn-explore {
+  display: inline-block;
+  padding: 15px 40px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+}
+
+.btn-explore:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+}
+</style>
