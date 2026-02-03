@@ -18,7 +18,7 @@ export default {
   },
   companyDetail: {
     title: 'About Company',
-    values: 'Core Values',
+    coreValues: 'Core Values',
     history: 'Company History',
     competencies: 'Core Competencies',
     statistics: 'Key Statistics',

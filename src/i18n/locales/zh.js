@@ -17,7 +17,7 @@ export default {
   },
   companyDetail: {
     title: '公司介绍',
-    values: '核心价值观',
+    coreValues: '核心价值观',
     history: '公司历史',
     competencies: '核心竞争力',
     statistics: '关键数据',
