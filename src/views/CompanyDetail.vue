@@ -54,7 +54,7 @@
           <!-- 核心价值观 -->
           <h2 class="section-title values-title" data-aos="fade-up">{{ i18n.t('companyDetail.values') }}</h2>
           <div class="values-grid">
-            <div v-for="(value, index) in company.values"
+            <div v-for="(value, index) in company.coreValues"
                  :key="index"
                  class="value-card"
                  data-aos="zoom-in"

@@ -30,7 +30,7 @@ export const companyInfo = {
     contentEn: 'Become the world\'s leading AI education platform, connecting global educational resources, and building an open, inclusive, and innovative education ecosystem.'
   },
 
-  values: [
+  coreValues: [
     {
       title: '创新',
       titleEn: 'Innovation',
